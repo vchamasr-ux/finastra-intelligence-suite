@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-f-violet: #694ED6;
+  --color-f-fuchsia: #C137A2;
+  --color-f-success: #008744;
+  --color-f-error: #E40046;
+  --color-f-charcoal: #1e293b;
+  --color-f-bg: #FAFAFA;
+  
+  --font-heading: "Outfit", sans-serif;
+  --font-body: "Roboto", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-body bg-slate-50 text-slate-900;
+  }
+}

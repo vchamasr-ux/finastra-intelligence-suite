@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-finastra-fuchsia: #c137a2;
+  --color-finastra-purple: #694ed6;
+  --color-finastra-black: #0d1012;
+  --color-finastra-gray: #dfe1e7;
+  --color-slate-850: #151e2e;
+  --font-sans: "Roboto", "Futura", "Inter", system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-finastra-black text-finastra-gray antialiased;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-slate-900/60 backdrop-blur-md border border-slate-800/50 shadow-xl;
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[var(--color-finastra-fuchsia)] to-[var(--color-finastra-purple)];
+  }
+}

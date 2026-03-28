@@ -1,0 +1,4 @@
+CERT,NAME,CITY,STALP,REPDTE,ASSET,DEP,NETLNLS,BRNUM,CB
+"11111","Test Bank National Association","New York","NY","20231231","150000000","120000000","95000000","200","1"
+"22222","Community Bank of Texas","Austin","TX","20231231","500000","400000","350000","5","1"
+"33333","Massive Payment Processor Bank","Sioux Falls","SD","20231231","200000000","180000000","20000000","50","0"

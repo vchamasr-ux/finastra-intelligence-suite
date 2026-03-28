@@ -1,0 +1,353 @@
+{
+  "tdBank": {
+    "NIMY": 0,
+    "ROA": 0,
+    "REPDTE": "20251231",
+    "ROE": null,
+    "ASSET": 61890846,
+    "NONIX": null,
+    "NETINC": null,
+    "DEP": 23144543,
+    "ROEQ": null,
+    "CERT": 33653,
+    "NONII": null,
+    "LNLSNET": 15222153,
+    "EEFFR": 0,
+    "ID": "33653_20251231"
+  },
+  "missingMetrics": [
+    {
+      "CERT": 33869,
+      "NAME": "Wachovia Bank, National Association",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 15802,
+      "NAME": "Bank of America, National Association",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 32633,
+      "NAME": "Washington Mutual Bank",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 3618,
+      "NAME": "Bank One, National Association",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 59017,
+      "NAME": "First Republic Bank",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 637,
+      "NAME": "Morgan Guaranty Trust Company of New York",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 867,
+      "NAME": "SunTrust Bank",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 2558,
+      "NAME": "Fleet National Bank",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 24735,
+      "NAME": "Silicon Valley Bank",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 57443,
+      "NAME": "West, National Association",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 23702,
+      "NAME": "Chase Bank USA, National Association",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 6557,
+      "NAME": "National City Bank",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 33954,
+      "NAME": "Capital One Bank (USA), National Association",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 33318,
+      "NAME": "FIA Card Services, National Association",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 4885,
+      "NAME": "First Union National Bank",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 23360,
+      "NAME": "Citibank (South Dakota), N.A.",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 624,
+      "NAME": "The Chase Manhattan Bank (National Association)",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 33143,
+      "NAME": "Countrywide Bank, FSB",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 57053,
+      "NAME": "Signature Bank",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 589,
+      "NAME": "HSBC Bank USA",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 35489,
+      "NAME": "ING Bank, fsb",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 3514,
+      "NAME": "Bank of the West",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 2499,
+      "NAME": "Fleet National Bank",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 19048,
+      "NAME": "BBVA USA",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 5134,
+      "NAME": "U.S. Bank National Association",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 30746,
+      "NAME": "E*TRADE Bank",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 817,
+      "NAME": "Wachovia Bank, National Association",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 6559,
+      "NAME": "Bank One, National Association",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 27374,
+      "NAME": "Merrill Lynch Bank USA",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 33692,
+      "NAME": "STANDARD CHARTERED BANK, PLC",
+      "Missing": [
+        "ROE",
+        "NETINC"
+      ],
+      "REPDTE": "20251231"
+    },
+    {
+      "CERT": 15407,
+      "NAME": "LaSalle Bank National Association",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 27306,
+      "NAME": "NationsBank of Texas, National Association",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 16022,
+      "NAME": "New York Community Bank",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 27334,
+      "NAME": "People's United Bank, National Association",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 33653,
+      "NAME": "Bank of China",
+      "Missing": [
+        "ROE",
+        "NETINC"
+      ],
+      "REPDTE": "20251231"
+    },
+    {
+      "CERT": 27076,
+      "NAME": "Wells Fargo Bank Southwest, National Association",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 849,
+      "NAME": "SouthTrust Bank",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 27595,
+      "NAME": "Bank of America, National Association (USA)",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 35328,
+      "NAME": "American Express Bank,  FSB.",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 641,
+      "NAME": "Manufacturers Hanover Trust Company",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 26800,
+      "NAME": "AmSouth Bank",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 15985,
+      "NAME": "North Fork Bank",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 21140,
+      "NAME": "Commerce Bank, National Association",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 993,
+      "NAME": "Fifth Third Bank",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 30278,
+      "NAME": "California Federal Bank",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 3469,
+      "NAME": "Security Pacific National Bank",
+      "Missing": [
+        "All Data"
+      ]
+    },
+    {
+      "CERT": 15919,
+      "NAME": "Home Savings of America, FSB",
+      "Missing": [
+        "All Data"
+      ]
+    }
+  ]
+}

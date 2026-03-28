@@ -1,0 +1,620 @@
+{
+  "products": [
+    {
+      "Product/solution": "Essence",
+      "Concise description": "Universal banking/core platform combining broad banking functionality with modern technology for evolving banking models.",
+      "Target segments": "Banks building/modernizing retail & universal banking; includes digital-first/new entrants and established institutions (global positioning).",
+      "Primary use cases": "Digital core modernization, product configuration, deposits/lending/payments operations, multi-currency and workflow-driven banking.",
+      "Key features/benefits": "Emphasis on rich core functionality + advanced tech; positioned with open APIs/event streaming for real-time experiences.",
+      "Deployment options": "On-prem and cloud offerings are described across materials; Azure marketplace listing also positions \u201cEssence in the cloud.\u201d",
+      "Pricing model (public)": "Not publicly listed; typically sales/quote driven.",
+      "Integrations/APIs": "API enablement and openness are repeatedly emphasized; integration with FusionFabric.cloud noted.",
+      "Known limitations / risks": "Core conversions are inherently high-risk (data migration, process change); diligence should validate roadmap and ecosystem dependencies; analyst recognition is promotional but does not substitute for fit testing.",
+      "Primary sources": ""
+    },
+    {
+      "Product/solution": "Essence Analytics",
+      "Concise description": "Analytics layer for insight-driven banking (dashboards, predictive models, AI-ready foundation) aligned to Essence data/operations.",
+      "Target segments": "Banks using/considering Essence; business users needing role dashboards and predictive insight.",
+      "Primary use cases": "Real-time visibility, predictive intelligence (e.g., churn/next-best product), performance tracking, risk/compliance oversight.",
+      "Key features/benefits": "Highlights include curated banking data model and an \u201cAI-ready foundation\u201d (Power BI/Azure Databricks referenced).",
+      "Deployment options": "\u201cCloud-first\u201d positioning.",
+      "Pricing model (public)": "Not publicly listed; typically quote-based.",
+      "Integrations/APIs": "Integrates with Essence and third-party AI via APIs/events.",
+      "Known limitations / risks": "Analytics success depends on data quality, governance, and adoption; validate scope of prebuilt models/dashboards and integration effort.",
+      "Primary sources": ""
+    },
+    {
+      "Product/solution": "Phoenix Banking Core",
+      "Concise description": "US core banking positioned for community banks/credit unions with open APIs and a 360\u00b0 view of account holders.",
+      "Target segments": "US community banks and credit unions.",
+      "Primary use cases": "Core modernization, open banking enablement, operational efficiency, growth scaling.",
+      "Key features/benefits": "\u201cFully open API architecture\u201d claim; emphasizes real-time access to customer exposure and entitlements.",
+      "Deployment options": "Both in-house (on-prem) and outsourced/hosted deployment guidance exists in Phoenix infrastructure docs.",
+      "Pricing model (public)": "Not publicly listed; typically quote-based.",
+      "Integrations/APIs": "Open APIs emphasized; ecosystem partner integrations are also referenced in press releases around migrations.",
+      "Known limitations / risks": "Implementation constraints can be practical (e.g., infrastructure requirements; operational dependencies); validate any embedded limits for ancillary components in your target deployment.",
+      "Primary sources": ""
+    },
+    {
+      "Product/solution": "MalauzAI Digital Banking",
+      "Concise description": "Digital banking platform (mobile/web) for next-gen experience and fast updates, positioned for the US mid-market.",
+      "Target segments": "US community banks and credit unions; acquired Malauzai historically positioned in this market.",
+      "Primary use cases": "Consumer and business digital banking UX modernization; faster feature rollouts; cross-device consistency.",
+      "Key features/benefits": "Highlights include unified development approach and open architecture; emphasis on security and engagement.",
+      "Deployment options": "Delivered as digital platform (SaaS-style positioning implied by product posture); validate with sales for exact model.",
+      "Pricing model (public)": "Not publicly listed.",
+      "Integrations/APIs": "Open architecture/integration emphasized; ecosystem language common.",
+      "Known limitations / risks": "Digital-channel success depends on integration, UX governance, and releases; confirm roadmap vs. older \u201cFusion Digital Banking\u201d line items.",
+      "Primary sources": ""
+    },
+    {
+      "Product/solution": "AnalyzerIQ",
+      "Concise description": "Business intelligence for community banks/credit unions: customer segments, product profitability, branch performance.",
+      "Target segments": "US community banks and credit unions.",
+      "Primary use cases": "Profitability analytics, segmentation, campaign and channel management measurement.",
+      "Key features/benefits": "Positioned to turn raw data into actionable insights for acquisition/engagement/profitability.",
+      "Deployment options": "Cloud-delivered posture implied; validate specific deployment.",
+      "Pricing model (public)": "Not public.",
+      "Integrations/APIs": "Integrations not exhaustively specified; typical BI depends on core/digital feeds; validate connectors.",
+      "Known limitations / risks": "Risks: data mapping effort, adoption and governance; ensure KPI definitions align to finance/ALM reporting if used operationally.",
+      "Primary sources": ""
+    },
+    {
+      "Product/solution": "Fusion Data Cloud",
+      "Concise description": "Data platform for simplified access, scalable sharing with fintechs, and faster development of data solutions; positioned as Azure-supported and linked to the open platform.",
+      "Target segments": "Financial institutions and fintech ecosystem building data products around Finastra systems.",
+      "Primary use cases": "Data sharing/ingestion, data solutions development \u201cin weeks,\u201d analytics enablement and innovation.",
+      "Key features/benefits": "Ecosystem framing and pre-integration with core products emphasized.",
+      "Deployment options": "Cloud (Azure-supported) positioning.",
+      "Pricing model (public)": "Not public.",
+      "Integrations/APIs": "Underpinned by FusionFabric.cloud in official release language.",
+      "Known limitations / risks": "Risks: data-governance/legal constraints for data sharing; architectural fit vs existing lakehouse.",
+      "Primary sources": ""
+    },
+    {
+      "Product/solution": "Finastra ECM",
+      "Concise description": "Enterprise content management platform to digitize paperwork and improve operational productivity.",
+      "Target segments": "US mid-market banks/credit unions.",
+      "Primary use cases": "Document digitization, centralized storage, operational workflow efficiency.",
+      "Key features/benefits": "\u201cSingle scalable solution\u201d messaging.",
+      "Deployment options": "Not fully specified publicly; validate hosted vs in-house.",
+      "Pricing model (public)": "Not public.",
+      "Integrations/APIs": "Integration likely with core/process tools; a migration press release references ECM and item processing in a broader migration suite.",
+      "Known limitations / risks": "Risks: content migration, retention policies, and integration into line-of-business processes.",
+      "Primary sources": ""
+    },
+    {
+      "Product/solution": "Loan IQ",
+      "Concise description": "Commercial loan servicing platform positioned for complex syndicated and bilateral lending, end-to-end lifecycle operations.",
+      "Target segments": "Large/global banks and complex commercial lenders; also supports SME/bilateral via Simplified Servicing.",
+      "Primary use cases": "Syndicated servicing, accounting, lifecycle events, consolidation of lending operations.",
+      "Key features/benefits": "Automation + end-to-end control; positioned as market-leading.",
+      "Deployment options": "Varies (on-prem/managed/hybrid patterns across enterprise lending portfolios); specific managed model referenced via Lending Cloud Service.",
+      "Pricing model (public)": "Not public.",
+      "Integrations/APIs": "SDK and integration layers exist historically; modern emphasis on APIs via Nexus/Transact/Build.",
+      "Known limitations / risks": "User-reported limitation: not \u201cfully customizable\u201d in at least one Gartner Peer Insights review; also typical enterprise complexity/implementation risk.",
+      "Primary sources": ""
+    },
+    {
+      "Product/solution": "Loan IQ Nexus",
+      "Concise description": "Integration layer to foster interoperability/connectivity across internal/external market platforms for lending ecosystems.",
+      "Target segments": "Complex lenders seeking ecosystem connectivity and reduced integration complexity.",
+      "Primary use cases": "Connected lending, API-led servicing/origination integration, automation.",
+      "Key features/benefits": "Market-facing integration layer; supports straight-through workflows.",
+      "Deployment options": "Not specified publicly; integration-layer model.",
+      "Pricing model (public)": "Not public.",
+      "Integrations/APIs": "Connectivity and interoperability are core value proposition.",
+      "Known limitations / risks": "Risk: integration programs can sprawl; validate supported API sets, transaction coverage, and governance model.",
+      "Primary sources": ""
+    },
+    {
+      "Product/solution": "Loan IQ Build",
+      "Concise description": "Loan onboarding/booking automation with centralized onboarding and system-agnostic integration to upstream origination systems.",
+      "Target segments": "Banks seeking STP onboarding across loan types, including complex structures.",
+      "Primary use cases": "Loan boarding, onboarding orchestration, reduction of manual keying.",
+      "Key features/benefits": "\u201cSingle point of entry,\u201d flexible mapping, API-based integration.",
+      "Deployment options": "Not specified publicly; integration module posture.",
+      "Pricing model (public)": "Not public.",
+      "Integrations/APIs": "Open APIs and system-agnostic integration emphasized.",
+      "Known limitations / risks": "Risk: onboarding quality depends on upstream data discipline; validate transaction coverage and error handling.",
+      "Primary sources": ""
+    },
+    {
+      "Product/solution": "Loan IQ Transact",
+      "Concise description": "Automates servicing events ingestion from any upstream system into Loan IQ via generic APIs and translation layers.",
+      "Target segments": "Lenders with multiple upstream systems or modernization programs requiring servicing automation.",
+      "Primary use cases": "STP servicing of lifecycle events (drawdowns, payments, increases, etc.).",
+      "Key features/benefits": "Generic market-facing APIs + Finastra-managed translation/integration.",
+      "Deployment options": "Not specified publicly.",
+      "Pricing model (public)": "Not public.",
+      "Integrations/APIs": "Explicitly an integration automation module for APIs.",
+      "Known limitations / risks": "Risk: confirm supported transaction set/versioning and change management.",
+      "Primary sources": ""
+    },
+    {
+      "Product/solution": "Loan Portal",
+      "Concise description": "Borrower self-service portal with real-time Loan IQ data and omni-channel features, positioned to improve loyalty and reduce servicing load.",
+      "Target segments": "Corporate lenders and their corporate borrowers.",
+      "Primary use cases": "Borrower transparency, transaction initiation, secure comms, reduced RM/back-office burden.",
+      "Key features/benefits": "Personalized dashboards; real-time loan data; omni-channel and API connectivity.",
+      "Deployment options": "Not explicitly stated; portal solution.",
+      "Pricing model (public)": "Not public.",
+      "Integrations/APIs": "Integrates with Loan IQ out-of-the-box, via Corporate Channels framework and APIs.",
+      "Known limitations / risks": "Risk: portal adoption and entitlements integration; validate features by region and host-to-host needs.",
+      "Primary sources": ""
+    },
+    {
+      "Product/solution": "Originate (consumer & business loans/deposits)",
+      "Concise description": "Unified, compliant platform for multi-channel loan/deposit applications with workflow automation and decisioning.",
+      "Target segments": "Banks and FIs digitizing consumer and SMB origination and account opening.",
+      "Primary use cases": "Account opening, loan application completion, e-sign, document upload, funding.",
+      "Key features/benefits": "Real-time decisioning; multi-channel consistency; includes Mortgagebot capabilities in broader Originate materials.",
+      "Deployment options": "SaaS hosted in Azure is explicitly stated in the consumer deposits factsheet.",
+      "Pricing model (public)": "Not public.",
+      "Integrations/APIs": "Integrations implied with downstream systems; MortgagebotLOS integration described in Mortgagebot materials.",
+      "Known limitations / risks": "Risk: KYC/identity/fraud and integration scope; validate modularity and time-to-implement assumptions.",
+      "Primary sources": ""
+    },
+    {
+      "Product/solution": "MortgagebotLOS + Originate Mortgagebot + Integrations",
+      "Concise description": "Cloud-native mortgage LOS plus POS and integration set to streamline mortgage lifecycle end-to-end.",
+      "Target segments": "Retail/wholesale/correspondent mortgage lenders (US emphasis).",
+      "Primary use cases": "Mortgage application experience, processing/closing, data flow reduction.",
+      "Key features/benefits": "Configurable workflows, compliance capabilities, and POS-to-LOS flow.",
+      "Deployment options": "Cloud-native for MortgagebotLOS is explicit.",
+      "Pricing model (public)": "Not public.",
+      "Integrations/APIs": "Dedicated integrations offering is published.",
+      "Known limitations / risks": "Risk: integration breadth, regulatory change management, and operational resilience across cyclical mortgage demand.",
+      "Primary sources": ""
+    },
+    {
+      "Product/solution": "LaserPro (platform + modules including Conductor/Evaluate)",
+      "Concise description": "Lending platform for documentation/compliance plus modular origination components and workflow automation.",
+      "Target segments": "Community lenders, banks, credit unions; commercial/consumer/mortgage lending.",
+      "Primary use cases": "Loan documentation generation, compliance checks, commercial origination modernization, document review/approval collaboration.",
+      "Key features/benefits": "LaserPro Conductor streamlines doc review and approvals; Evaluate positioned as cloud-native commercial origination replacing spreadsheets/manual processes.",
+      "Deployment options": "LaserPro cloud strategy is explicit in press; Evaluate is cloud-native; overall platform is cloud modular.",
+      "Pricing model (public)": "Not public.",
+      "Integrations/APIs": "APIs/connectivity highlighted (e.g., cloud connect API references in partner story context); platform supports third-party integrations.",
+      "Known limitations / risks": "Risk: compliance liability still requires governance; validate SLA, update cadence, and integration with LOS/core.",
+      "Primary sources": ""
+    },
+    {
+      "Product/solution": "Trade Innovation + Trade Portal",
+      "Concise description": "Trade finance booking engine/platform plus corporate-facing portal to digitize trade transactions (LCs, guarantees, collections).",
+      "Target segments": "Transaction banks and corporate banking groups.",
+      "Primary use cases": "Trade finance operations modernization, risk visibility, corporate self-service for trade.",
+      "Key features/benefits": "Real-time visibility into transactions/exposures; trade-portal digitization of trade processes.",
+      "Deployment options": "Platform posture varies; Nexus adds cloud-ready modular integration.",
+      "Pricing model (public)": "Not public.",
+      "Integrations/APIs": "API-driven messaging and interoperability emphasized (especially with Nexus).",
+      "Known limitations / risks": "Risk: digital trade ecosystem dependencies and interoperability complexity; validate partner adapters and coverage.",
+      "Primary sources": ""
+    },
+    {
+      "Product/solution": "Trade Innovation Nexus",
+      "Concise description": "Modular integration layer for Trade Innovation with REST APIs, pre-built adapters, and interoperability modules.",
+      "Target segments": "Trade finance institutions needing faster integration/onboarding and lifecycle automation.",
+      "Primary use cases": "Interoperability between bank systems/fintech ecosystem; integration management; data visibility.",
+      "Key features/benefits": "Unified API layer; pre-built adapters; modular \u201cmodules\u201d described in factsheet snippet.",
+      "Deployment options": "Cloud-ready layer is explicit.",
+      "Pricing model (public)": "Not public.",
+      "Integrations/APIs": "REST APIs and integration tools are central.",
+      "Known limitations / risks": "Risk: adapter availability vs your ecosystem; governance/versioning of APIs.",
+      "Primary sources": ""
+    },
+    {
+      "Product/solution": "Corporate Channels + Unified Corporate Portal + Cash/Trade/Loan portals",
+      "Concise description": "Corporate digital banking framework and unified portal concept spanning cash, trade, SCF, lending, and payments visibility.",
+      "Target segments": "Corporate/transaction banks serving corporates and SMEs.",
+      "Primary use cases": "Unified corporate onboarding/navigation; self-service; cross-product servicing.",
+      "Key features/benefits": "Deep-linking across portals; common dashboards and user admin; omni-channel access.",
+      "Deployment options": "Not fully specified; portal/framework product set.",
+      "Pricing model (public)": "Not public.",
+      "Integrations/APIs": "Open API positioning; SDK mentioned in Cash Portal factsheet.",
+      "Known limitations / risks": "Risk: entitlements, identity, and cross-product integration complexity; validate UX consistency and operational ownership.",
+      "Primary sources": ""
+    },
+    {
+      "Product/solution": "ESG Service",
+      "Concise description": "Cloud-native SaaS to automate sustainability-linked lending/bond pricing adjustments by integrating SPTs into pricing and servicing systems.",
+      "Target segments": "Corporate lenders with SLL/SLB portfolios; banks needing automated ESG-linked pricing updates.",
+      "Primary use cases": "Sustainability-linked pricing automation, margin/fee recalculation, auditability for ESG terms.",
+      "Key features/benefits": "Open API integration; configurable to varied deal structures and formats.",
+      "Deployment options": "Cloud-native SaaS is explicit.",
+      "Pricing model (public)": "Not public.",
+      "Integrations/APIs": "Open APIs and integration with Loan IQ and other servicing systems is explicit.",
+      "Known limitations / risks": "Risk: ESG data sourcing and KPI governance; validate calculation rules, audit trails, and exceptions.",
+      "Primary sources": ""
+    },
+    {
+      "Product/solution": "DFA 1071 / Compliance Reporter SBDC",
+      "Concise description": "Compliance module to streamline small business data collection, validation, storage, reporting and filing for Section 1071 requirements.",
+      "Target segments": "US community banks/credit unions and other covered small business lenders.",
+      "Primary use cases": "Regulatory compliance workflow for 1071 data collection and reporting.",
+      "Key features/benefits": "Cloud-native module built on LaserPro Compliance Reporter; integrates with LaserPro/CreditQuest/DecisionPro/Originate.",
+      "Deployment options": "Cloud-native is explicit.",
+      "Pricing model (public)": "Not public.",
+      "Integrations/APIs": "\u201cIntegrates seamlessly\u201d with specified retail lending products is stated.",
+      "Known limitations / risks": "Risk: evolving regulatory interpretation and firewall requirements; validate data segregation controls and audit processes.",
+      "Primary sources": ""
+    },
+    {
+      "Product/solution": "Fusion CreditQuest",
+      "Concise description": "Commercial lending credit workflow/risk management suite (portfolio management, underwriting support, reporting), evidenced via customer story and partner descriptions.",
+      "Target segments": "Commercial lenders (community/regional focus evidenced).",
+      "Primary use cases": "Faster decisioning, borrower experience improvement, underwriting workflow efficiency.",
+      "Key features/benefits": "Lender Insights module highlights pipeline and borrower-expectation management.",
+      "Deployment options": "Cloud-based capabilities described in older brochure line (integration to Microsoft tools).",
+      "Pricing model (public)": "Not public.",
+      "Integrations/APIs": "Integration with Microsoft tooling is referenced in brochures; validate current integration posture.",
+      "Known limitations / risks": "Risk: product-line maturity vs newer LaserPro Evaluate/Originate; validate roadmap and overlap.",
+      "Primary sources": ""
+    },
+    {
+      "Product/solution": "Global PAYplus",
+      "Concise description": "Modular, composable, multi-cloud, multi-country, multi-rail, ISO 20022-native payment hub for real-time, high-value, mass, and cross-border payments.",
+      "Target segments": "High-tier and enterprise banks modernizing payment hubs.",
+      "Primary use cases": "Payment hub consolidation; ISO 20022 migration; multi-rail orchestration including ACH/instant/RTGS/cross-border.",
+      "Key features/benefits": "Configurable rules engine, pre-certified workflows, API connectivity; promotes high STP rates and reduced TCO via consolidation (solution overview).",
+      "Deployment options": "Multiple models across on-prem/managed cloud/SaaS are described at the payments portfolio level; Global PAYplus itself is positioned as multi-cloud.",
+      "Pricing model (public)": "Not public; some third-party directories mention \u201cpricing\u201d categories but not authoritative for enterprise deals.",
+      "Integrations/APIs": "API-based connectivity; ACH module launched as part of modernization strategy; integration with multiple rails referenced externally.",
+      "Known limitations / risks": "Risks: payments modernization is mission-critical; validate regulatory readiness by country/rail, cutover strategy, and resilience.",
+      "Primary sources": ""
+    },
+    {
+      "Product/solution": "Payments To Go",
+      "Concise description": "Payments-as-a-Service (PaaS) route to multi-rail processing positioned as lower cost/risk onboarding for mid-market institutions.",
+      "Target segments": "Mid-tier financial institutions; also referenced in payments institutions pages.",
+      "Primary use cases": "Fast multi-rail enablement; instant payments adoption; payment transformation with managed service model.",
+      "Key features/benefits": "Open API + microservices architecture; marketplace access; analytics and flexible payment rules (factsheet).",
+      "Deployment options": "Positioned as cloud-native/managed service model.",
+      "Pricing model (public)": "Not public.",
+      "Integrations/APIs": "Open APIs emphasized; FedNow certification messaging references a Total Messaging gateway.",
+      "Known limitations / risks": "Risks: reliance on managed provider SLAs, scheme coverage by region, operational controls; validate underwriting and exception workflows.",
+      "Primary sources": ""
+    },
+    {
+      "Product/solution": "Financial Messaging (incl. Total Messaging positioning)",
+      "Concise description": "Messaging workflow engine/gateway for Swift and other market infrastructures; positioned as one of the larger Swift service bureaus and as a platform with embedded microservices (e.g., transformation).",
+      "Target segments": "Medium-sized banks, NBFIs, and corporates needing Swift/rail connectivity (per FAQ).",
+      "Primary use cases": "Swift connectivity, CBPR+/ISO 20022 translation, market-infrastructure gateways, instant-payment connectivity.",
+      "Key features/benefits": "Claims: certified Swift interface program alignment; connectivity to >15 market infrastructures and 30+ rails across multiple countries; partner connectivity to Mastercard Move and Thunes described.",
+      "Deployment options": "Payments portfolio states multiple deployment options including SaaS, managed cloud, and on-prem.",
+      "Pricing model (public)": "Not public.",
+      "Integrations/APIs": "Transformation service embedded as microservice; curated third-party overlay services referenced.",
+      "Known limitations / risks": "Risks: messaging environments are security-critical; validate Swift CSP controls, data residency, and incident response.",
+      "Primary sources": ""
+    },
+    {
+      "Product/solution": "Bacsactive-IP",
+      "Concise description": "UK Bacs Direct Credit/Debit processing with Faster Payments access; explicitly SaaS with added modules in a UK gov service-definition doc.",
+      "Target segments": "UK organizations and institutions needing Bacs services; marketed as suitable regardless of size/complexity.",
+      "Primary use cases": "Payroll/supplier payments, Direct Debits/collections, operational automation, error reduction.",
+      "Key features/benefits": "Web-based access, configurable workflows, multi-factor auth options, integration with accounting/ERP and open API module.",
+      "Deployment options": "SaaS with UK data-center hosting is explicit; availability level 99.5% during operating hours stated in the gov doc.",
+      "Pricing model (public)": "Subscription-style: \u201csubscribing to our software service\u201d and monthly invoicing language appears; separate pricing doc referenced but not included.",
+      "Integrations/APIs": "Open API module referenced; multiple add-on modules listed; Confirmation of Payee integrated messaging exists in separate factsheet page.",
+      "Known limitations / risks": "Risks: UK-only scope, data residency constraints, and reliance on Bacs operational calendars; multi-module configuration governance.",
+      "Primary sources": ""
+    },
+    {
+      "Product/solution": "RapidWires",
+      "Concise description": "Packaged wire processing automation for FedLine Direct (Fedwire) in the US.",
+      "Target segments": "US institutions using FedLine Direct for wires.",
+      "Primary use cases": "Automate inbound/outbound wire flows, exception processing, investigations, and notifications.",
+      "Key features/benefits": "\u201cOut-of-the-box\u201d processing flows and packaged configuration.",
+      "Deployment options": "Phoenix deployment guide indicates RapidWires can be \u201cHosted\u201d and uses a thick client; the same doc snapshot lists a 3,000 wires/month transaction limit in a standard model.",
+      "Pricing model (public)": "Not public.",
+      "Integrations/APIs": "Integrations depend on FedLine Direct and internal systems; validate interface patterns.",
+      "Known limitations / risks": "Limitation risk: transaction caps in some standard deployments; validate scalability requirements and whether caps apply to your offering tier.",
+      "Primary sources": ""
+    },
+    {
+      "Product/solution": "ACH Module (modern ACH)",
+      "Concise description": "Cloud-native ACH processing module launched to replace legacy ACH systems; supports same-day ACH and API-driven operational controls.",
+      "Target segments": "US banks modernizing ACH processing.",
+      "Primary use cases": "ACH modernization, scaling volumes, integrating fraud/OFAC and operational controls.",
+      "Key features/benefits": "Kafka-based event streaming and cloud-native microservices are cited in external news; Finastra emphasizes forward-compatible architecture and rich APIs.",
+      "Deployment options": "Cloud-native posture in messaging.",
+      "Pricing model (public)": "Not public.",
+      "Integrations/APIs": "APIs for operational control/integration are explicitly stated.",
+      "Known limitations / risks": "Risks: scheme certification and operational risk in cutover; validate batch/file constraints and exception-handling capabilities.",
+      "Primary sources": ""
+    },
+    {
+      "Product/solution": "Compliance as a Service (instant payments)",
+      "Concise description": "Pre-packaged compliance screening + AI-powered transaction monitoring for instant payments (FedNow/TIPS) via partners.",
+      "Target segments": "Banks adopting instant payments with heightened financial crime exposure.",
+      "Primary use cases": "Real-time sanctions screening and transaction monitoring for instant rails; reduce false positives and operational cost.",
+      "Key features/benefits": "Partnered approach: real-time compliance screening by Fincom and AI monitoring from ThetaRay described in release language.",
+      "Deployment options": "Cloud-based is explicit in factsheet positioning.",
+      "Pricing model (public)": "Not public.",
+      "Integrations/APIs": "Designed to integrate with payment infrastructures; validate integration patterns with your hub/rails.",
+      "Known limitations / risks": "Risks: third-party dependency and model governance; validate explainability, regulatory acceptability, and operational playbooks.",
+      "Primary sources": ""
+    },
+    {
+      "Product/solution": "Total Screening",
+      "Concise description": "Sanctions screening solution scanning transactions and customer files against sanctions/PEP lists.",
+      "Target segments": "Banks/corporates needing sanctions/embargo compliance.",
+      "Primary use cases": "Payment screening, AML compliance workflows, reduction of false positives.",
+      "Key features/benefits": "Supports transaction and customer file screening; emphasizes quality controls.",
+      "Deployment options": "Not specified publicly.",
+      "Pricing model (public)": "Not public.",
+      "Integrations/APIs": "Often positioned alongside payments platforms; validate APIs and embedding options.",
+      "Known limitations / risks": "Risks: sanctions list updates and operational burden; validate list coverage and tuning tooling.",
+      "Primary sources": ""
+    },
+    {
+      "Product/solution": "PAYplus for CLS",
+      "Concise description": "Settlement services platform for CLS-eligible FX transactions and related workflows (bank notifications, netting, non-CLS currencies).",
+      "Target segments": "Banks participating in CLS settlement.",
+      "Primary use cases": "CLS processing automation, monitoring, reconciliation, and distribution of notifications.",
+      "Key features/benefits": "Captures/processes messages per CLS rules and distributes to counterparties; promotes automation and growth.",
+      "Deployment options": "Not specified publicly.",
+      "Pricing model (public)": "Not public.",
+      "Integrations/APIs": "Integrates with internal systems and third parties (press language).",
+      "Known limitations / risks": "Risk: settlement systems are high-criticality; validate certification posture and operational resilience.",
+      "Primary sources": ""
+    },
+    {
+      "Product/solution": "Confirmation Matching Service (CMS)",
+      "Concise description": "Multi-bank confirmation matching SaaS that automates/de-risks post-trade confirmations; large client base claim on the service page.",
+      "Target segments": "Banks and market participants needing confirmation matching.",
+      "Primary use cases": "Automated confirmation matching, reduced operational risk, scaling without heavy IT investment.",
+      "Key features/benefits": "SaaS positioning, automation benefits, audit controls referenced in factsheet.",
+      "Deployment options": "SaaS is explicit.",
+      "Pricing model (public)": "Not public.",
+      "Integrations/APIs": "Integrates into trade confirmation workflows; validate supported asset classes and interfaces.",
+      "Known limitations / risks": "Risks: operational dependence on SaaS and network participants; validate continuity, data residency, and audit certifications.",
+      "Primary sources": ""
+    }
+  ],
+  "customers": [
+    {
+      "Customer": "BNI",
+      "Industry": "Banking (trade finance)",
+      "Problem/context": "Multi-vendor trade stack and operational friction; sought modernization and faster innovation.",
+      "Finastra solution(s) implemented": "Trade Innovation",
+      "Measurable outcomes (as published)": "Reported: IDR 1.11B fee income from trade transactions (2024); 36% YoY growth in wholesale transaction-banking volumes (2022\u20132024); ~25% faster onboarding and ability to offer SLA <3 hours; 10% increase in customer acquisition in the fiscal year referenced.",
+      "Primary sources": ""
+    },
+    {
+      "Customer": "Hoyne Savings Bank",
+      "Industry": "Banking (community bank; mortgage lending)",
+      "Problem/context": "Needed digital lending expansion and compliance-ready processes while scaling via acquisition.",
+      "Finastra solution(s) implemented": "Originate Mortgagebot + MortgagebotLOS + LaserPro",
+      "Measurable outcomes (as published)": "Reported: 74% increase in number of loans issued during first six months of 2020; 56% increase in dollar amount of new loans; implementation support enabled teams \u201cup and running\u201d in one week (per case study narrative).",
+      "Primary sources": ""
+    },
+    {
+      "Customer": "Tonik",
+      "Industry": "Digital banking",
+      "Problem/context": "Built a digital bank and scaled personalized digital journeys; needed agile scalable core and AI-enabled service.",
+      "Finastra solution(s) implemented": "Essence (core) + (referenced alongside analytics/AI narrative)",
+      "Measurable outcomes (as published)": "Reported: 94% growth in consumer loan portfolio; 75% of inquiries resolved automatically by AI; 133% YoY increase in loan production; 4.3x increase in operational efficiency (as displayed on Essence Analytics page customer story).",
+      "Primary sources": ""
+    },
+    {
+      "Customer": "ORO Bank",
+      "Industry": "Digital banking",
+      "Problem/context": "New venture needing compliant, scalable cloud core and rapid launch to global markets.",
+      "Finastra solution(s) implemented": "Essence (cloud-based core)",
+      "Measurable outcomes (as published)": "Reported: launched products to global markets in less than six months (implementation + go-live speed emphasized).",
+      "Primary sources": ""
+    },
+    {
+      "Customer": "BKN301 Group",
+      "Industry": "BaaS / fintech",
+      "Problem/context": "Needed a cloud core with strong API connectivity to build and white-label BaaS and payments orchestration across multiple regions.",
+      "Finastra solution(s) implemented": "Essence (cloud core)",
+      "Measurable outcomes (as published)": "Reported: deployed/configured/tested and went live with Essence in less than six months (speed-to-market emphasis).",
+      "Primary sources": ""
+    },
+    {
+      "Customer": "Vietcombank",
+      "Industry": "Banking (payments modernization)",
+      "Problem/context": "Legacy payments sprawl; needed consolidation and automation to support digital transformation.",
+      "Finastra solution(s) implemented": "Global PAYplus",
+      "Measurable outcomes (as published)": "Reported: \u201cnearly 100%\u201d STP for domestic payments and \u201cmore than 90%\u201d for cross-border; reduced manual intervention and processing time; consolidated multiple payments services onto a single platform.",
+      "Primary sources": ""
+    },
+    {
+      "Customer": "ING",
+      "Industry": "Banking (corporate lending)",
+      "Problem/context": "Sought end-to-end corporate lending transformation and servicing automation at scale.",
+      "Finastra solution(s) implemented": "Loan IQ Nexus",
+      "Measurable outcomes (as published)": "Published customer story describes reducing manual work and unlocking scalable innovation across 95% of the portfolio referenced in the story narrative.",
+      "Primary sources": ""
+    },
+    {
+      "Customer": "ODDO BHF",
+      "Industry": "Banking (trade finance)",
+      "Problem/context": "Legacy replacement and move toward scalable, secure, collaborative digital trade workflows.",
+      "Finastra solution(s) implemented": "Trade Innovation",
+      "Measurable outcomes (as published)": "Reported: replaced legacy system \u201cin under 12 months\u201d and moved toward API-driven automation and compliance.",
+      "Primary sources": ""
+    },
+    {
+      "Customer": "Consumers Credit Union",
+      "Industry": "Credit union",
+      "Problem/context": "Needed modernized core for innovation and scale.",
+      "Finastra solution(s) implemented": "Fusion Phoenix (core) + listed additional solutions",
+      "Measurable outcomes (as published)": "Reported: asset growth from $320M to $1.1B after converting to Fusion Phoenix (quote in case study).",
+      "Primary sources": ""
+    },
+    {
+      "Customer": "American Express",
+      "Industry": "Payments",
+      "Problem/context": "Modernized global payment services hub for remittances and transformation.",
+      "Finastra solution(s) implemented": "Payment services hub (case study document)",
+      "Measurable outcomes (as published)": "Case study emphasizes strategic transformation; quantified metrics are not visible in the excerpted lines used here.",
+      "Primary sources": ""
+    },
+    {
+      "Customer": "Lloyds Bank",
+      "Industry": "Banking (payments)",
+      "Problem/context": "Payments transformation program citing partnership and payment-processing expertise.",
+      "Finastra solution(s) implemented": "Payments modernization partnership (story page)",
+      "Measurable outcomes (as published)": "Qualitative outcomes emphasized on the story landing page; quantify via downloadable materials if required.",
+      "Primary sources": ""
+    },
+    {
+      "Customer": "Jefferson Bank",
+      "Industry": "Banking",
+      "Problem/context": "Needed \u201cbig bank\u201d grade payment processing technology via managed model.",
+      "Finastra solution(s) implemented": "Payments To Go",
+      "Measurable outcomes (as published)": "Customer quote emphasizes access to modern payment processing; metrics not stated on the excerpted page portion.",
+      "Primary sources": ""
+    },
+    {
+      "Customer": "VyStar Credit Union",
+      "Industry": "Credit union",
+      "Problem/context": "Wanted to streamline wire processing and improve member/employee experience.",
+      "Finastra solution(s) implemented": "Payments To Go",
+      "Measurable outcomes (as published)": "Qualitative outcomes described; story emphasizes open APIs and operational efficiency goals.",
+      "Primary sources": ""
+    },
+    {
+      "Customer": "Security State Bank and Trust",
+      "Industry": "Community banking",
+      "Problem/context": "Sought more responsive commercial lending and streamlined data entry across expansion.",
+      "Finastra solution(s) implemented": "LaserPro + integration via Cloud Connect API with a third-party LOS",
+      "Measurable outcomes (as published)": "Highlights expected outcomes: productivity, reduced manual work, improved accuracy through integration; details are described in the story.",
+      "Primary sources": ""
+    },
+    {
+      "Customer": "Abrigo",
+      "Industry": "Fintech partner",
+      "Problem/context": "Joint value proposition around digitizing and automating lending management activities.",
+      "Finastra solution(s) implemented": "LaserPro Cloud Connect API (partner story)",
+      "Measurable outcomes (as published)": "Partner story emphasizes faster time-to-money and digitization/automation; metrics not stated in excerpt.",
+      "Primary sources": ""
+    },
+    {
+      "Customer": "Mada Capital",
+      "Industry": "Investment management",
+      "Problem/context": "Fragmented systems and manual workflows across front/middle/back office created operational risk.",
+      "Finastra solution(s) implemented": "Fusion Invest (note: now under Teciem divestiture context)",
+      "Measurable outcomes (as published)": "Case study describes consolidation and automation outcomes; quantified metrics require deeper extraction from the full PDF.",
+      "Primary sources": ""
+    }
+  ],
+  "useCases": [
+    {
+      "Priority use case": "Payment hub consolidation + ISO 20022 migration",
+      "Best-fit products/modules": "Global PAYplus + Financial Messaging (transformation services)",
+      "Primary buyer personas": "Head of Payments, CIO, Ops/Run leaders",
+      "Typical pains": "Fragmented rails, high change cost, ISO 20022 deadlines, operational risk",
+      "ROI drivers and measurable outcomes": "Fewer interfaces/systems; improved STP; lower TCO; faster onboarding of new rails/schemes",
+      "Proof anchors": "Vietcombank STP uplift; PAYplus ISO 20022-native positioning"
+    },
+    {
+      "Priority use case": "Instant payments enablement with compliance controls",
+      "Best-fit products/modules": "Payments To Go + Compliance as a Service + Financial Messaging",
+      "Primary buyer personas": "Payments product head, risk/compliance, COO",
+      "Typical pains": "Need 24/7 rails with fraud/AML uplift; limited resources",
+      "ROI drivers and measurable outcomes": "Faster launch; reduced compliance operational cost; reduced false positives; safer 24/7 processing",
+      "Proof anchors": "Compliance-as-a-Service description + FedNow/TIPS focus"
+    },
+    {
+      "Priority use case": "Wire processing modernization for mid-tier institutions",
+      "Best-fit products/modules": "RapidWires + Payments To Go + Financial Messaging",
+      "Primary buyer personas": "Payments ops, treasury ops, technology ops",
+      "Typical pains": "Manual exception load, FedLine Direct complexity",
+      "ROI drivers and measurable outcomes": "Reduced manual processing; packaged \u201cbank in a box\u201d approach",
+      "Proof anchors": "RapidWires description; deployment constraints to validate"
+    },
+    {
+      "Priority use case": "Corporate loan servicing STP and ecosystem connectivity",
+      "Best-fit products/modules": "Loan IQ + Nexus/Transact/Build",
+      "Primary buyer personas": "Corporate lending ops, CIO, lending transformation lead",
+      "Typical pains": "Manual servicing events; disconnected upstream systems",
+      "ROI drivers and measurable outcomes": "Reduced manual keying; automation; scalable portfolio coverage",
+      "Proof anchors": "ING customer story; Transact and Nexus positioning"
+    },
+    {
+      "Priority use case": "Borrower self-service and multi-product corporate portals",
+      "Best-fit products/modules": "Loan Portal + Corporate Channels + Unified Corporate Portal",
+      "Primary buyer personas": "Head of Transaction Banking, Corporate Digital, RM leadership",
+      "Typical pains": "Borrowers demand transparency; RM time on low-value queries",
+      "ROI drivers and measurable outcomes": "Lower servicing cost; higher loyalty; improved transaction speed",
+      "Proof anchors": "Loan Portal and Unified Corporate Portal factsheets"
+    },
+    {
+      "Priority use case": "Trade finance modernization + digital trade interoperability",
+      "Best-fit products/modules": "Trade Innovation + Trade Portal + Trade Innovation Nexus",
+      "Primary buyer personas": "Trade product head, operations, CIO",
+      "Typical pains": "Paper-heavy workflows; multiple systems; fintech ecosystem fragmentation",
+      "ROI drivers and measurable outcomes": "Faster onboarding; automation; improved compliance; faster time-to-market",
+      "Proof anchors": "BNI case study; ODDO BHF story; Nexus integration claims"
+    },
+    {
+      "Priority use case": "Digital origination + account opening (consumer/SMB)",
+      "Best-fit products/modules": "Originate (consumer/business)",
+      "Primary buyer personas": "Retail/SMB lending head, digital channels",
+      "Typical pains": "Abandonment, slow decisions, manual docs",
+      "ROI drivers and measurable outcomes": "Faster applications; real-time decisioning; improved CX",
+      "Proof anchors": "Originate factsheets and product pages"
+    },
+    {
+      "Priority use case": "Mortgage POS/LOS modernization with integrated docs/compliance",
+      "Best-fit products/modules": "MortgagebotLOS + Originate Mortgagebot + LaserPro",
+      "Primary buyer personas": "Mortgage ops, CIO",
+      "Typical pains": "Fragmented mortgage tech, compliance complexity",
+      "ROI drivers and measurable outcomes": "Faster processing/closing, reduced manual steps",
+      "Proof anchors": "Hoyne metrics; MortgagebotLOS platform claims"
+    },
+    {
+      "Priority use case": "Regulatory compliance automation for US small business lending (DFA 1071)",
+      "Best-fit products/modules": "DFA 1071 / Compliance Reporter SBDC + LaserPro suite integration",
+      "Primary buyer personas": "Chief Compliance Officer, lending ops",
+      "Typical pains": "New rule reporting burden, firewall requirements",
+      "ROI drivers and measurable outcomes": "Reduced manual collection; auditability; lower compliance overhead",
+      "Proof anchors": "DFA 1071 factsheet + launch press"
+    },
+    {
+      "Priority use case": "Insight-driven growth, profitability, and segmentation",
+      "Best-fit products/modules": "Essence Analytics + AnalyzerIQ + Digital Banking Insights",
+      "Primary buyer personas": "CMO, product leaders, FP&A",
+      "Typical pains": "Limited visibility, slow decisions, weak targeting",
+      "ROI drivers and measurable outcomes": "Increased cross-sell, churn reduction, product profitability improvement",
+      "Proof anchors": "Essence Analytics + AnalyzerIQ positioning; Digital Banking Insights app"
+    }
+  ],
+  "competitors": [
+    {
+      "Domain": "Retail/universal core banking",
+      "Finastra focal products": "Essence",
+      "Commonly referenced competitor set (examples)": "Temenos, Infosys Finacle, Oracle, Mambu, Thought Machine, TCS, FIS, Fiserv",
+      "Sources grounding the competitor set": "Forrester Wave Q4 2024 vendor list"
+    },
+    {
+      "Domain": "Payment hubs",
+      "Finastra focal products": "Global PAYplus, Payments To Go",
+      "Commonly referenced competitor set (examples)": "Volante Technologies, Icon Solutions, plus large core vendors\u2019 payment-hub offerings",
+      "Sources grounding the competitor set": "Omdia Universe payment hubs provider list (paywalled evaluation page still lists vendors)"
+    },
+    {
+      "Domain": "Digital banking engagement",
+      "Finastra focal products": "MalauzAI / Fusion Digital Banking",
+      "Commonly referenced competitor set (examples)": "Backbase, Q2, Alkami",
+      "Sources grounding the competitor set": "Competitive sets are commonly seen in digital engagement evaluations; Forrester digital engagement PDF indicates Finastra as a contender in Q3 2019 engagement platforms."
+    },
+    {
+      "Domain": "Corporate lending servicing",
+      "Finastra focal products": "Loan IQ",
+      "Commonly referenced competitor set (examples)": "Competitors vary by bank segment; ecosystem includes LOS and servicing platforms; borrower portals and integration layers also compete with in-house build and specialized vendors",
+      "Sources grounding the competitor set": "Loan IQ presence and market descriptions; peer insights reference (opinions)."
+    },
+    {
+      "Domain": "Trade finance platforms",
+      "Finastra focal products": "Trade Innovation + portals + Nexus",
+      "Commonly referenced competitor set (examples)": "Competitive landscape typically includes specialized trade-finance vendors and bank-built stacks; comparisons are often RFP-specific",
+      "Sources grounding the competitor set": "Finastra trade product materials provide capability posture rather than competitor naming."
+    }
+  ]
+}

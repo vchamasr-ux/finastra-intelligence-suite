@@ -1,0 +1,21 @@
+{
+  "name": "finastra",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:e2e": "npx playwright test",
+    "test:e2e:lead-gen": "npx playwright test --project=lead-gen",
+    "test:e2e:value-selling": "npx playwright test --project=value-selling",
+    "test:unit:lead-gen": "cd lead-gen/ui && npx vitest run",
+    "test:unit:value-selling": "cd value-selling && npx vitest run",
+    "test:all": "npm run test:unit:lead-gen && npm run test:unit:value-selling && npm run test:e2e"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2"
+  }
+}
