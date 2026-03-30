@@ -29,3 +29,5 @@ tests-examples/
 *.njsproj
 *.sln
 *.sw?
+
+.vercel
