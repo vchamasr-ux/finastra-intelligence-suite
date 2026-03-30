@@ -4,12 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:e2e": "npx playwright test",
-    "test:e2e:lead-gen": "npx playwright test --project=lead-gen",
-    "test:e2e:value-selling": "npx playwright test --project=value-selling",
-    "test:unit:lead-gen": "cd lead-gen/ui && npx vitest run",
-    "test:unit:value-selling": "cd value-selling && npx vitest run",
-    "test:all": "npm run test:unit:lead-gen && npm run test:unit:value-selling && npm run test:e2e"
+    "dev": "cd landing-page && npm run dev",
+    "build": "cd landing-page && npm run build",
+    "test:unit": "cd landing-page && npx vitest run",
+    "test:e2e": "cd landing-page && npx playwright test",
+    "test:all": "npm run test:unit && npm run test:e2e"
   },
   "keywords": [],
   "author": "",

@@ -6,7 +6,7 @@
       "Target segments": "Banks building/modernizing retail & universal banking; includes digital-first/new entrants and established institutions (global positioning).",
       "Primary use cases": "Digital core modernization, product configuration, deposits/lending/payments operations, multi-currency and workflow-driven banking.",
       "Key features/benefits": "Emphasis on rich core functionality + advanced tech; positioned with open APIs/event streaming for real-time experiences.",
-      "Deployment options": "On-prem and cloud offerings are described across materials; Azure marketplace listing also positions “Essence in the cloud.”",
+      "Deployment options": "On-prem and cloud offerings are described across materials; Azure marketplace listing also positions \u201cEssence in the cloud.\u201d",
       "Pricing model (public)": "Not publicly listed; typically sales/quote driven.",
       "Integrations/APIs": "API enablement and openness are repeatedly emphasized; integration with FusionFabric.cloud noted.",
       "Known limitations / risks": "Core conversions are inherently high-risk (data migration, process change); diligence should validate roadmap and ecosystem dependencies; analyst recognition is promotional but does not substitute for fit testing.",
@@ -17,8 +17,8 @@
       "Concise description": "Analytics layer for insight-driven banking (dashboards, predictive models, AI-ready foundation) aligned to Essence data/operations.",
       "Target segments": "Banks using/considering Essence; business users needing role dashboards and predictive insight.",
       "Primary use cases": "Real-time visibility, predictive intelligence (e.g., churn/next-best product), performance tracking, risk/compliance oversight.",
-      "Key features/benefits": "Highlights include curated banking data model and an “AI-ready foundation” (Power BI/Azure Databricks referenced).",
-      "Deployment options": "“Cloud-first” positioning.",
+      "Key features/benefits": "Highlights include curated banking data model and an \u201cAI-ready foundation\u201d (Power BI/Azure Databricks referenced).",
+      "Deployment options": "\u201cCloud-first\u201d positioning.",
       "Pricing model (public)": "Not publicly listed; typically quote-based.",
       "Integrations/APIs": "Integrates with Essence and third-party AI via APIs/events.",
       "Known limitations / risks": "Analytics success depends on data quality, governance, and adoption; validate scope of prebuilt models/dashboards and integration effort.",
@@ -26,10 +26,10 @@
     },
     {
       "Product/solution": "Phoenix Banking Core",
-      "Concise description": "US core banking positioned for community banks/credit unions with open APIs and a 360° view of account holders.",
+      "Concise description": "US core banking positioned for community banks/credit unions with open APIs and a 360\u00b0 view of account holders.",
       "Target segments": "US community banks and credit unions.",
       "Primary use cases": "Core modernization, open banking enablement, operational efficiency, growth scaling.",
-      "Key features/benefits": "“Fully open API architecture” claim; emphasizes real-time access to customer exposure and entitlements.",
+      "Key features/benefits": "\u201cFully open API architecture\u201d claim; emphasizes real-time access to customer exposure and entitlements.",
       "Deployment options": "Both in-house (on-prem) and outsourced/hosted deployment guidance exists in Phoenix infrastructure docs.",
       "Pricing model (public)": "Not publicly listed; typically quote-based.",
       "Integrations/APIs": "Open APIs emphasized; ecosystem partner integrations are also referenced in press releases around migrations.",
@@ -45,7 +45,7 @@
       "Deployment options": "Delivered as digital platform (SaaS-style positioning implied by product posture); validate with sales for exact model.",
       "Pricing model (public)": "Not publicly listed.",
       "Integrations/APIs": "Open architecture/integration emphasized; ecosystem language common.",
-      "Known limitations / risks": "Digital-channel success depends on integration, UX governance, and releases; confirm roadmap vs. older “Fusion Digital Banking” line items.",
+      "Known limitations / risks": "Digital-channel success depends on integration, UX governance, and releases; confirm roadmap vs. older \u201cFusion Digital Banking\u201d line items.",
       "Primary sources": ""
     },
     {
@@ -64,7 +64,7 @@
       "Product/solution": "Fusion Data Cloud",
       "Concise description": "Data platform for simplified access, scalable sharing with fintechs, and faster development of data solutions; positioned as Azure-supported and linked to the open platform.",
       "Target segments": "Financial institutions and fintech ecosystem building data products around Finastra systems.",
-      "Primary use cases": "Data sharing/ingestion, data solutions development “in weeks,” analytics enablement and innovation.",
+      "Primary use cases": "Data sharing/ingestion, data solutions development \u201cin weeks,\u201d analytics enablement and innovation.",
       "Key features/benefits": "Ecosystem framing and pre-integration with core products emphasized.",
       "Deployment options": "Cloud (Azure-supported) positioning.",
       "Pricing model (public)": "Not public.",
@@ -77,7 +77,7 @@
       "Concise description": "Enterprise content management platform to digitize paperwork and improve operational productivity.",
       "Target segments": "US mid-market banks/credit unions.",
       "Primary use cases": "Document digitization, centralized storage, operational workflow efficiency.",
-      "Key features/benefits": "“Single scalable solution” messaging.",
+      "Key features/benefits": "\u201cSingle scalable solution\u201d messaging.",
       "Deployment options": "Not fully specified publicly; validate hosted vs in-house.",
       "Pricing model (public)": "Not public.",
       "Integrations/APIs": "Integration likely with core/process tools; a migration press release references ECM and item processing in a broader migration suite.",
@@ -93,7 +93,7 @@
       "Deployment options": "Varies (on-prem/managed/hybrid patterns across enterprise lending portfolios); specific managed model referenced via Lending Cloud Service.",
       "Pricing model (public)": "Not public.",
       "Integrations/APIs": "SDK and integration layers exist historically; modern emphasis on APIs via Nexus/Transact/Build.",
-      "Known limitations / risks": "User-reported limitation: not “fully customizable” in at least one Gartner Peer Insights review; also typical enterprise complexity/implementation risk.",
+      "Known limitations / risks": "User-reported limitation: not \u201cfully customizable\u201d in at least one Gartner Peer Insights review; also typical enterprise complexity/implementation risk.",
       "Primary sources": ""
     },
     {
@@ -113,7 +113,7 @@
       "Concise description": "Loan onboarding/booking automation with centralized onboarding and system-agnostic integration to upstream origination systems.",
       "Target segments": "Banks seeking STP onboarding across loan types, including complex structures.",
       "Primary use cases": "Loan boarding, onboarding orchestration, reduction of manual keying.",
-      "Key features/benefits": "“Single point of entry,” flexible mapping, API-based integration.",
+      "Key features/benefits": "\u201cSingle point of entry,\u201d flexible mapping, API-based integration.",
       "Deployment options": "Not specified publicly; integration module posture.",
       "Pricing model (public)": "Not public.",
       "Integrations/APIs": "Open APIs and system-agnostic integration emphasized.",
@@ -197,7 +197,7 @@
       "Concise description": "Modular integration layer for Trade Innovation with REST APIs, pre-built adapters, and interoperability modules.",
       "Target segments": "Trade finance institutions needing faster integration/onboarding and lifecycle automation.",
       "Primary use cases": "Interoperability between bank systems/fintech ecosystem; integration management; data visibility.",
-      "Key features/benefits": "Unified API layer; pre-built adapters; modular “modules” described in factsheet snippet.",
+      "Key features/benefits": "Unified API layer; pre-built adapters; modular \u201cmodules\u201d described in factsheet snippet.",
       "Deployment options": "Cloud-ready layer is explicit.",
       "Pricing model (public)": "Not public.",
       "Integrations/APIs": "REST APIs and integration tools are central.",
@@ -236,7 +236,7 @@
       "Key features/benefits": "Cloud-native module built on LaserPro Compliance Reporter; integrates with LaserPro/CreditQuest/DecisionPro/Originate.",
       "Deployment options": "Cloud-native is explicit.",
       "Pricing model (public)": "Not public.",
-      "Integrations/APIs": "“Integrates seamlessly” with specified retail lending products is stated.",
+      "Integrations/APIs": "\u201cIntegrates seamlessly\u201d with specified retail lending products is stated.",
       "Known limitations / risks": "Risk: evolving regulatory interpretation and firewall requirements; validate data segregation controls and audit processes.",
       "Primary sources": ""
     },
@@ -259,7 +259,7 @@
       "Primary use cases": "Payment hub consolidation; ISO 20022 migration; multi-rail orchestration including ACH/instant/RTGS/cross-border.",
       "Key features/benefits": "Configurable rules engine, pre-certified workflows, API connectivity; promotes high STP rates and reduced TCO via consolidation (solution overview).",
       "Deployment options": "Multiple models across on-prem/managed cloud/SaaS are described at the payments portfolio level; Global PAYplus itself is positioned as multi-cloud.",
-      "Pricing model (public)": "Not public; some third-party directories mention “pricing” categories but not authoritative for enterprise deals.",
+      "Pricing model (public)": "Not public; some third-party directories mention \u201cpricing\u201d categories but not authoritative for enterprise deals.",
       "Integrations/APIs": "API-based connectivity; ACH module launched as part of modernization strategy; integration with multiple rails referenced externally.",
       "Known limitations / risks": "Risks: payments modernization is mission-critical; validate regulatory readiness by country/rail, cutover strategy, and resilience.",
       "Primary sources": ""
@@ -295,7 +295,7 @@
       "Primary use cases": "Payroll/supplier payments, Direct Debits/collections, operational automation, error reduction.",
       "Key features/benefits": "Web-based access, configurable workflows, multi-factor auth options, integration with accounting/ERP and open API module.",
       "Deployment options": "SaaS with UK data-center hosting is explicit; availability level 99.5% during operating hours stated in the gov doc.",
-      "Pricing model (public)": "Subscription-style: “subscribing to our software service” and monthly invoicing language appears; separate pricing doc referenced but not included.",
+      "Pricing model (public)": "Subscription-style: \u201csubscribing to our software service\u201d and monthly invoicing language appears; separate pricing doc referenced but not included.",
       "Integrations/APIs": "Open API module referenced; multiple add-on modules listed; Confirmation of Payee integrated messaging exists in separate factsheet page.",
       "Known limitations / risks": "Risks: UK-only scope, data residency constraints, and reliance on Bacs operational calendars; multi-module configuration governance.",
       "Primary sources": ""
@@ -305,8 +305,8 @@
       "Concise description": "Packaged wire processing automation for FedLine Direct (Fedwire) in the US.",
       "Target segments": "US institutions using FedLine Direct for wires.",
       "Primary use cases": "Automate inbound/outbound wire flows, exception processing, investigations, and notifications.",
-      "Key features/benefits": "“Out-of-the-box” processing flows and packaged configuration.",
-      "Deployment options": "Phoenix deployment guide indicates RapidWires can be “Hosted” and uses a thick client; the same doc snapshot lists a 3,000 wires/month transaction limit in a standard model.",
+      "Key features/benefits": "\u201cOut-of-the-box\u201d processing flows and packaged configuration.",
+      "Deployment options": "Phoenix deployment guide indicates RapidWires can be \u201cHosted\u201d and uses a thick client; the same doc snapshot lists a 3,000 wires/month transaction limit in a standard model.",
       "Pricing model (public)": "Not public.",
       "Integrations/APIs": "Integrations depend on FedLine Direct and internal systems; validate interface patterns.",
       "Known limitations / risks": "Limitation risk: transaction caps in some standard deployments; validate scalability requirements and whether caps apply to your offering tier.",
@@ -379,18 +379,18 @@
       "Industry": "Banking (trade finance)",
       "Problem/context": "Multi-vendor trade stack and operational friction; sought modernization and faster innovation.",
       "Finastra solution(s) implemented": "Trade Innovation",
-      "Measurable outcomes (as published)": "Reported: IDR 1.11B fee income from trade transactions (2024); 36% YoY growth in wholesale transaction-banking volumes (2022–2024); ~25% faster onboarding and ability to offer SLA <3 hours; 10% increase in customer acquisition in the fiscal year referenced.",
+      "Measurable outcomes (as published)": "Reported: IDR 1.11B fee income from trade transactions (2024); 36% YoY growth in wholesale transaction-banking volumes (2022\u20132024); ~25% faster onboarding and ability to offer SLA <3 hours; 10% increase in customer acquisition in the fiscal year referenced.",
       "Primary sources": "",
-      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com%20%22BNI%22%20case%20study%20OR%20press%20release"
+      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com+%22BNI%22+%22case+study%22"
     },
     {
       "Customer": "Hoyne Savings Bank",
       "Industry": "Banking (community bank; mortgage lending)",
       "Problem/context": "Needed digital lending expansion and compliance-ready processes while scaling via acquisition.",
       "Finastra solution(s) implemented": "Originate Mortgagebot + MortgagebotLOS + LaserPro",
-      "Measurable outcomes (as published)": "Reported: 74% increase in number of loans issued during first six months of 2020; 56% increase in dollar amount of new loans; implementation support enabled teams “up and running” in one week (per case study narrative).",
+      "Measurable outcomes (as published)": "Reported: 74% increase in number of loans issued during first six months of 2020; 56% increase in dollar amount of new loans; implementation support enabled teams \u201cup and running\u201d in one week (per case study narrative).",
       "Primary sources": "",
-      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com%20%22Hoyne%20Savings%20Bank%22%20case%20study%20OR%20press%20release"
+      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com+%22Hoyne+Savings+Bank%22+%22case+study%22"
     },
     {
       "Customer": "Tonik",
@@ -399,7 +399,7 @@
       "Finastra solution(s) implemented": "Essence (core) + (referenced alongside analytics/AI narrative)",
       "Measurable outcomes (as published)": "Reported: 94% growth in consumer loan portfolio; 75% of inquiries resolved automatically by AI; 133% YoY increase in loan production; 4.3x increase in operational efficiency (as displayed on Essence Analytics page customer story).",
       "Primary sources": "",
-      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com%20%22Tonik%22%20case%20study%20OR%20press%20release"
+      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com+%22Tonik%22+%22case+study%22"
     },
     {
       "Customer": "ORO Bank",
@@ -408,7 +408,7 @@
       "Finastra solution(s) implemented": "Essence (cloud-based core)",
       "Measurable outcomes (as published)": "Reported: launched products to global markets in less than six months (implementation + go-live speed emphasized).",
       "Primary sources": "",
-      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com%20%22ORO%20Bank%22%20case%20study%20OR%20press%20release"
+      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com+%22ORO+Bank%22+%22case+study%22"
     },
     {
       "Customer": "BKN301 Group",
@@ -417,16 +417,16 @@
       "Finastra solution(s) implemented": "Essence (cloud core)",
       "Measurable outcomes (as published)": "Reported: deployed/configured/tested and went live with Essence in less than six months (speed-to-market emphasis).",
       "Primary sources": "",
-      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com%20%22BKN301%20Group%22%20case%20study%20OR%20press%20release"
+      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com+%22BKN301+Group%22+%22case+study%22"
     },
     {
       "Customer": "Vietcombank",
       "Industry": "Banking (payments modernization)",
       "Problem/context": "Legacy payments sprawl; needed consolidation and automation to support digital transformation.",
       "Finastra solution(s) implemented": "Global PAYplus",
-      "Measurable outcomes (as published)": "Reported: “nearly 100%” STP for domestic payments and “more than 90%” for cross-border; reduced manual intervention and processing time; consolidated multiple payments services onto a single platform.",
+      "Measurable outcomes (as published)": "Reported: \u201cnearly 100%\u201d STP for domestic payments and \u201cmore than 90%\u201d for cross-border; reduced manual intervention and processing time; consolidated multiple payments services onto a single platform.",
       "Primary sources": "",
-      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com%20%22Vietcombank%22%20case%20study%20OR%20press%20release"
+      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com+%22Vietcombank%22+%22case+study%22"
     },
     {
       "Customer": "ING",
@@ -435,16 +435,16 @@
       "Finastra solution(s) implemented": "Loan IQ Nexus",
       "Measurable outcomes (as published)": "Published customer story describes reducing manual work and unlocking scalable innovation across 95% of the portfolio referenced in the story narrative.",
       "Primary sources": "",
-      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com%20%22ING%22%20case%20study%20OR%20press%20release"
+      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com+%22ING%22+%22case+study%22"
     },
     {
       "Customer": "ODDO BHF",
       "Industry": "Banking (trade finance)",
       "Problem/context": "Legacy replacement and move toward scalable, secure, collaborative digital trade workflows.",
       "Finastra solution(s) implemented": "Trade Innovation",
-      "Measurable outcomes (as published)": "Reported: replaced legacy system “in under 12 months” and moved toward API-driven automation and compliance.",
+      "Measurable outcomes (as published)": "Reported: replaced legacy system \u201cin under 12 months\u201d and moved toward API-driven automation and compliance.",
       "Primary sources": "",
-      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com%20%22ODDO%20BHF%22%20case%20study%20OR%20press%20release"
+      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com+%22ODDO+BHF%22+%22case+study%22"
     },
     {
       "Customer": "Consumers Credit Union",
@@ -453,7 +453,7 @@
       "Finastra solution(s) implemented": "Fusion Phoenix (core) + listed additional solutions",
       "Measurable outcomes (as published)": "Reported: asset growth from $320M to $1.1B after converting to Fusion Phoenix (quote in case study).",
       "Primary sources": "",
-      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com%20%22Consumers%20Credit%20Union%22%20case%20study%20OR%20press%20release"
+      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com+%22Consumers+Credit+Union%22+%22case+study%22"
     },
     {
       "Customer": "American Express",
@@ -462,7 +462,7 @@
       "Finastra solution(s) implemented": "Payment services hub (case study document)",
       "Measurable outcomes (as published)": "Case study emphasizes strategic transformation; quantified metrics are not visible in the excerpted lines used here.",
       "Primary sources": "",
-      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com%20%22American%20Express%22%20case%20study%20OR%20press%20release"
+      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com+%22American+Express%22+%22case+study%22"
     },
     {
       "Customer": "Lloyds Bank",
@@ -471,16 +471,16 @@
       "Finastra solution(s) implemented": "Payments modernization partnership (story page)",
       "Measurable outcomes (as published)": "Qualitative outcomes emphasized on the story landing page; quantify via downloadable materials if required.",
       "Primary sources": "",
-      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com%20%22Lloyds%20Bank%22%20case%20study%20OR%20press%20release"
+      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com+%22Lloyds+Bank%22+%22case+study%22"
     },
     {
       "Customer": "Jefferson Bank",
       "Industry": "Banking",
-      "Problem/context": "Needed “big bank” grade payment processing technology via managed model.",
+      "Problem/context": "Needed \u201cbig bank\u201d grade payment processing technology via managed model.",
       "Finastra solution(s) implemented": "Payments To Go",
       "Measurable outcomes (as published)": "Customer quote emphasizes access to modern payment processing; metrics not stated on the excerpted page portion.",
       "Primary sources": "",
-      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com%20%22Jefferson%20Bank%22%20case%20study%20OR%20press%20release"
+      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com+%22Jefferson+Bank%22+%22case+study%22"
     },
     {
       "Customer": "VyStar Credit Union",
@@ -489,7 +489,7 @@
       "Finastra solution(s) implemented": "Payments To Go",
       "Measurable outcomes (as published)": "Qualitative outcomes described; story emphasizes open APIs and operational efficiency goals.",
       "Primary sources": "",
-      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com%20%22VyStar%20Credit%20Union%22%20case%20study%20OR%20press%20release"
+      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com+%22VyStar+Credit+Union%22+%22case+study%22"
     },
     {
       "Customer": "Security State Bank and Trust",
@@ -498,7 +498,7 @@
       "Finastra solution(s) implemented": "LaserPro + integration via Cloud Connect API with a third-party LOS",
       "Measurable outcomes (as published)": "Highlights expected outcomes: productivity, reduced manual work, improved accuracy through integration; details are described in the story.",
       "Primary sources": "",
-      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com%20%22Security%20State%20Bank%20and%20Trust%22%20case%20study%20OR%20press%20release"
+      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com+%22Security+State+Bank+and+Trust%22+%22case+study%22"
     },
     {
       "Customer": "Abrigo",
@@ -507,7 +507,7 @@
       "Finastra solution(s) implemented": "LaserPro Cloud Connect API (partner story)",
       "Measurable outcomes (as published)": "Partner story emphasizes faster time-to-money and digitization/automation; metrics not stated in excerpt.",
       "Primary sources": "",
-      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com%20%22Abrigo%22%20case%20study%20OR%20press%20release"
+      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com+%22Abrigo%22+%22case+study%22"
     },
     {
       "Customer": "Mada Capital",
@@ -516,7 +516,7 @@
       "Finastra solution(s) implemented": "Fusion Invest (note: now under Teciem divestiture context)",
       "Measurable outcomes (as published)": "Case study describes consolidation and automation outcomes; quantified metrics require deeper extraction from the full PDF.",
       "Primary sources": "",
-      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com%20%22Mada%20Capital%22%20case%20study%20OR%20press%20release"
+      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com+%22Mada+Capital%22+%22case+study%22"
     }
   ],
   "useCases": [
@@ -527,7 +527,7 @@
       "Typical pains": "Fragmented rails, high change cost, ISO 20022 deadlines, operational risk",
       "ROI drivers and measurable outcomes": "Fewer interfaces/systems; improved STP; lower TCO; faster onboarding of new rails/schemes",
       "Proof anchors": "Vietcombank STP uplift; PAYplus ISO 20022-native positioning",
-      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com%20%22Payment%20hub%20consolidation%20%2B%20ISO%2020022%20migration%22"
+      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com+%22Payment+hub+consolidation+%2B+ISO+20022+migration%22"
     },
     {
       "Priority use case": "Instant payments enablement with compliance controls",
@@ -536,16 +536,16 @@
       "Typical pains": "Need 24/7 rails with fraud/AML uplift; limited resources",
       "ROI drivers and measurable outcomes": "Faster launch; reduced compliance operational cost; reduced false positives; safer 24/7 processing",
       "Proof anchors": "Compliance-as-a-Service description + FedNow/TIPS focus",
-      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com%20%22Instant%20payments%20enablement%20with%20compliance%20controls%22"
+      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com+%22Instant+payments+enablement+with+compliance+controls%22"
     },
     {
       "Priority use case": "Wire processing modernization for mid-tier institutions",
       "Best-fit products/modules": "RapidWires + Payments To Go + Financial Messaging",
       "Primary buyer personas": "Payments ops, treasury ops, technology ops",
       "Typical pains": "Manual exception load, FedLine Direct complexity",
-      "ROI drivers and measurable outcomes": "Reduced manual processing; packaged “bank in a box” approach",
+      "ROI drivers and measurable outcomes": "Reduced manual processing; packaged \u201cbank in a box\u201d approach",
       "Proof anchors": "RapidWires description; deployment constraints to validate",
-      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com%20%22Wire%20processing%20modernization%20for%20mid-tier%20institutions%22"
+      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com+%22Wire+processing+modernization+for+mid-tier+institutions%22"
     },
     {
       "Priority use case": "Corporate loan servicing STP and ecosystem connectivity",
@@ -554,7 +554,7 @@
       "Typical pains": "Manual servicing events; disconnected upstream systems",
       "ROI drivers and measurable outcomes": "Reduced manual keying; automation; scalable portfolio coverage",
       "Proof anchors": "ING customer story; Transact and Nexus positioning",
-      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com%20%22Corporate%20loan%20servicing%20STP%20and%20ecosystem%20connectivity%22"
+      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com+%22Corporate+loan+servicing+STP+and+ecosystem+connectivity%22"
     },
     {
       "Priority use case": "Borrower self-service and multi-product corporate portals",
@@ -563,7 +563,7 @@
       "Typical pains": "Borrowers demand transparency; RM time on low-value queries",
       "ROI drivers and measurable outcomes": "Lower servicing cost; higher loyalty; improved transaction speed",
       "Proof anchors": "Loan Portal and Unified Corporate Portal factsheets",
-      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com%20%22Borrower%20self-service%20and%20multi-product%20corporate%20portals%22"
+      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com+%22Borrower+self-service+and+multi-product+corporate+portals%22"
     },
     {
       "Priority use case": "Trade finance modernization + digital trade interoperability",
@@ -572,7 +572,7 @@
       "Typical pains": "Paper-heavy workflows; multiple systems; fintech ecosystem fragmentation",
       "ROI drivers and measurable outcomes": "Faster onboarding; automation; improved compliance; faster time-to-market",
       "Proof anchors": "BNI case study; ODDO BHF story; Nexus integration claims",
-      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com%20%22Trade%20finance%20modernization%20%2B%20digital%20trade%20interoperability%22"
+      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com+%22Trade+finance+modernization+%2B+digital+trade+interoperability%22"
     },
     {
       "Priority use case": "Digital origination + account opening (consumer/SMB)",
@@ -581,7 +581,7 @@
       "Typical pains": "Abandonment, slow decisions, manual docs",
       "ROI drivers and measurable outcomes": "Faster applications; real-time decisioning; improved CX",
       "Proof anchors": "Originate factsheets and product pages",
-      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com%20%22Digital%20origination%20%2B%20account%20opening%20(consumer%2FSMB)%22"
+      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com+%22Digital+origination+%2B+account+opening+%28consumer%2FSMB%29%22"
     },
     {
       "Priority use case": "Mortgage POS/LOS modernization with integrated docs/compliance",
@@ -590,7 +590,7 @@
       "Typical pains": "Fragmented mortgage tech, compliance complexity",
       "ROI drivers and measurable outcomes": "Faster processing/closing, reduced manual steps",
       "Proof anchors": "Hoyne metrics; MortgagebotLOS platform claims",
-      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com%20%22Mortgage%20POS%2FLOS%20modernization%20with%20integrated%20docs%2Fcompliance%22"
+      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com+%22Mortgage+POS%2FLOS+modernization+with+integrated+docs%2Fcompliance%22"
     },
     {
       "Priority use case": "Regulatory compliance automation for US small business lending (DFA 1071)",
@@ -599,7 +599,7 @@
       "Typical pains": "New rule reporting burden, firewall requirements",
       "ROI drivers and measurable outcomes": "Reduced manual collection; auditability; lower compliance overhead",
       "Proof anchors": "DFA 1071 factsheet + launch press",
-      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com%20%22Regulatory%20compliance%20automation%20for%20US%20small%20business%20lending%20(DFA%201071)%22"
+      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com+%22Regulatory+compliance+automation+for+US+small+business+lending+%28DFA+1071%29%22"
     },
     {
       "Priority use case": "Insight-driven growth, profitability, and segmentation",
@@ -608,7 +608,7 @@
       "Typical pains": "Limited visibility, slow decisions, weak targeting",
       "ROI drivers and measurable outcomes": "Increased cross-sell, churn reduction, product profitability improvement",
       "Proof anchors": "Essence Analytics + AnalyzerIQ positioning; Digital Banking Insights app",
-      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com%20%22Insight-driven%20growth%2C%20profitability%2C%20and%20segmentation%22"
+      "Link": "https://duckduckgo.com/?q=site%3Afinastra.com+%22Insight-driven+growth%2C+profitability%2C+and+segmentation%22"
     }
   ],
   "competitors": [
@@ -622,7 +622,7 @@
     {
       "Domain": "Payment hubs",
       "Finastra focal products": "Global PAYplus, Payments To Go",
-      "Commonly referenced competitor set (examples)": "Volante Technologies, Icon Solutions, plus large core vendors’ payment-hub offerings",
+      "Commonly referenced competitor set (examples)": "Volante Technologies, Icon Solutions, plus large core vendors\u2019 payment-hub offerings",
       "Sources grounding the competitor set": "Omdia Universe payment hubs provider list (paywalled evaluation page still lists vendors)",
       "Finastra differentiators": "Native ISO 20022 support from the ground up, robust multi-rail orchestration, and 'Payments To Go' PaaS allowing rapid, low-risk onboarding for mid-tier banks."
     },

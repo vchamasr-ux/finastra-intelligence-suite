@@ -1,23 +1,19 @@
+import { Link, useLocation } from 'react-router-dom';
 import { Home, Target, Presentation, Database } from 'lucide-react';
 
 export const GlobalNav = () => {
-  const currentOrigin = window.location.origin;
-  const currentHash = window.location.hash;
-  
-  const hubUrl = import.meta.env.VITE_INTELLIGENCE_HUB_URL || 'http://localhost:5175';
-  const leadGenUrl = import.meta.env.VITE_LEAD_GEN_URL || 'http://localhost:5174';
-  const valueSellingUrl = import.meta.env.VITE_VALUE_SELLING_URL || 'http://localhost:5173';
+  const location = useLocation();
 
-  const isHome = currentOrigin === hubUrl && !currentHash.includes('assets');
-  const isLeadGen = currentOrigin === leadGenUrl;
-  const isValueSelling = currentOrigin === valueSellingUrl;
-  const isAssets = currentOrigin === hubUrl && currentHash.includes('assets');
+  const isHome = location.pathname === '/';
+  const isAssets = location.pathname === '/assets';
+  const isLeadGen = location.pathname.startsWith('/lead-gen');
+  const isValueSelling = location.pathname.startsWith('/pitchbook');
 
   const navItems = [
-    { label: 'Intelligence Hub', icon: Home, url: `${hubUrl}/`, active: isHome },
-    { label: 'Lead Gen Engine', icon: Target, url: `${leadGenUrl}/`, active: isLeadGen },
-    { label: 'Value Selling', icon: Presentation, url: `${valueSellingUrl}/`, active: isValueSelling },
-    { label: 'Finastra Assets', icon: Database, url: `${hubUrl}/#assets`, active: isAssets },
+    { label: 'Intelligence Hub', icon: Home, url: '/', active: isHome },
+    { label: 'Lead Gen Engine', icon: Target, url: '/lead-gen', active: isLeadGen },
+    { label: 'Value Selling', icon: Presentation, url: '/pitchbook', active: isValueSelling },
+    { label: 'Finastra Assets', icon: Database, url: '/assets', active: isAssets },
   ];
 
   return (
@@ -25,9 +21,9 @@ export const GlobalNav = () => {
       {navItems.map((item) => {
         const Icon = item.icon;
         return (
-          <a
+          <Link
             key={item.label}
-            href={item.url}
+            to={item.url}
             className={`flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-medium transition-all duration-300 ${
               item.active 
                 ? 'bg-[#c137a2]/20 text-[#c137a2] border border-[#c137a2]/50 shadow-[0_0_15px_rgba(193,55,162,0.2)]'
@@ -36,7 +32,7 @@ export const GlobalNav = () => {
           >
             <Icon size={16} />
             {item.label}
-          </a>
+          </Link>
         );
       })}
     </div>

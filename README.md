@@ -4,45 +4,34 @@ A production-grade, multi-application intelligence platform for Finastra, built 
 
 ## 🏗️ Architecture
 
-The monorepo contains 4 sub-projects:
+The repository is structured as a **Single Unified Web Application**.
 
-1. **`landing-page/`**: The unified entry point to the Finastra Intelligence suite. Uses dynamic YouTube video embeds to showcase tools and routes the user into the respective web applications.
-2. **`lead-gen/ui/`**: The deterministic scoring and hypothesis generation engine. Pulls live FDIC data, computes features locally, scores all US banks across 34 Finastra products using heuristic models, and renders a segmented leaderboard with CSV export capabilities.
-3. **`value-selling/`**: Generates bespoke, data-driven pitch decks on the fly using Live FDIC metrics (efficiency ratio, net income, NIM, etc.). The deck dynamically sizes to a 16:9 10-slide presentation optimized for C-suite buyers.
-4. **`e2e/`**: Playwright browser automation suites that cross-validate the UI flows for both `lead-gen` and `value-selling`.
+**`landing-page/`**: The unified entry point to the Finastra Intelligence suite. It uses `react-router` to cleanly segment the application into modules, sharing styles and dependencies:
+1. **Landing Hub (`/`)**: Dynamic video embeds and routing into the respective web applications.
+2. **Lead Generation Engine (`/lead-gen`)**: The deterministic scoring and hypothesis generation engine. Pulls live FDIC data, computes features locally, scores all US banks across 34 Finastra products using heuristic models, and renders a segmented leaderboard with CSV export capabilities.
+3. **Value-Selling Pitchbook (`/pitchbook`)**: Generates bespoke, data-driven pitch decks on the fly using Live FDIC metrics (efficiency ratio, net income, NIM, etc.). The deck dynamically sizes to a 16:9 10-slide presentation optimized for C-suite buyers.
 
 ## 🚀 Quick Start
 
-From the root directory, ensure you have dependencies installed (though note each sub-project also has its own dependencies).
-
-### Running the apps
-
-You can start the apps individually:
+The entire suite runs off a single Vite configuration on a single port (default `5175`).
 
 ```bash
-# Start the Value-Selling Pitchbook Generator
-cd value-selling
-npm run dev
-
-# Start the Lead Generation Leaderboard
-cd lead-gen/ui
-npm run dev
-
-# Start the Landing Page
+# Start the unified suite
 cd landing-page
+npm install
 npm run dev
 ```
 
 ## 🧪 Testing Stack
 
-The project uses a comprehensive, 3-layer testing approach ensuring logic correctness, live API integrity, and E2E behavioral validation.
+The project uses a comprehensive testing approach ensuring logic correctness, live API integrity, and E2E behavioral validation.
 
 ### Scripts
 Run the following from the **Repository Root** (`c:\Users\vcham\Documents\VS Code Programs\Finastra\`):
 
 - **`npm run test:all`** - Runs all unit tests and all Playwright UI tests
-- **`npm run test:unit`** - Runs all logic/feature unit tests via Vitest across the sub-projects
-- **`npm run test:e2e`** - Re-runs the E2E Playwright browser automation suite
+- **`npm run test:unit`** - Runs all logic/feature unit tests via Vitest in `landing-page`
+- **`npm run test:e2e`** - Runs the E2E Playwright browser automation suite in `landing-page`
 
 ### Test Layers
 
@@ -55,8 +44,8 @@ Run the following from the **Repository Root** (`c:\Users\vcham\Documents\VS Cod
     - Verifies real JPM and BofA data to ensure FDIC schema has not changed and values (like `EEFFR` and `NONII`) are correctly populated.
     - Enforces the **Fail Loudly** doctrine for broken upstream APIs.
 3. **End-to-End Visual Flow (Playwright)**
-    - Confirms that the `lead-gen` board renders and that segmentation selects interact properly.
-    - Confirms that the `value-selling` search triggers 10 valid slides without console unhandled runtime errors.
+    - Confirms that the `/lead-gen` board renders and that segmentation selects interact properly.
+    - Confirms that the `/pitchbook` search triggers 10 valid slides without console unhandled runtime errors.
 
 ## 📐 Design Philosophy
 
