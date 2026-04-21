@@ -381,7 +381,7 @@ export function BankDetailsModal({
             <button
               onClick={() =>
                 window.open(
-                  `${import.meta.env.VITE_PITCHBOOK_URL ?? "/pitchbook"}/?cert=${bank.fdicCert}`,
+                  `${import.meta.env.VITE_PITCHBOOK_URL ?? "/pitchbook"}?cert=${bank.fdicCert}`,
                   "_blank",
                 )
               }

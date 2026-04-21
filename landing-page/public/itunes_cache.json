@@ -1,1 +1,5 @@
-{"628":{"name":"JPMorgan Chase Bank, National Association","rating":4.8}}
+{
+  "628": {"name":"JPMorgan Chase Bank, National Association","rating":4.8},
+  "33497": {"name":"Charles Schwab Premier Bank, SSB","rating":4.7},
+  "57803": {"name":"Ally Bank","rating":4.9}
+}
