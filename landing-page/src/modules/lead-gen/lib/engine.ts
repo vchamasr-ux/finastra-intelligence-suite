@@ -16,6 +16,7 @@ export interface BankIntel {
   scores: any;
   productScores: ProductScore[];
   state: string;
+  sourcePeriod: string | null;
 }
 
 const ASSET_TIERS = {
@@ -162,7 +163,7 @@ function buildBankFeatures(cert: string, inst: any, fin: any, hist: any): BankFe
 
 // ─── SessionStorage Cache ──────────────────────────────────────────────────────
 
-const CACHE_KEY = 'finastra_lead_gen_v2_cache';
+const CACHE_KEY = 'finastra_lead_gen_v3_cache';
 const CACHE_TTL_MS = 30 * 60 * 1000; // 30 minutes
 
 interface CachedData {
@@ -282,7 +283,8 @@ export async function runClientEngine(): Promise<BankIntel[]> {
         features,
         scores: {},
         productScores,
-        state: instRecord.STALP || 'TX'
+        state: instRecord.STALP || 'TX',
+        sourcePeriod: finRecord.REPDTE ? String(finRecord.REPDTE) : null,
       });
     }
     

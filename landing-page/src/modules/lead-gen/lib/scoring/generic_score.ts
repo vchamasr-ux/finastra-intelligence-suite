@@ -5,6 +5,14 @@ export interface ProductScore {
   productName: string;
   score: number;
   reasons: string[];
+  drivers: string[];
+  ruleExplanation: {
+    baseline: string;
+    segment: string;
+    profitability: string;
+    kpis: string;
+    finalization: string;
+  };
 }
 
 const getPeerSegment = (assetsB: number) => {
@@ -22,6 +30,7 @@ export function scoreProduct(product: any, features: BankFeatures): ProductScore
   
   const productName = product["Product/solution"];
   const seg = (product["Target segments"] || "").toLowerCase();
+  let segmentRule = "No target-segment adjustment applied.";
 
   const assetsB = features.totalAssets / 1_000_000;
   const peers = getPeerSegment(assetsB);
@@ -29,22 +38,45 @@ export function scoreProduct(product: any, features: BankFeatures): ProductScore
   // Hard Segment adjustments
   if (seg.includes('mid-market') || seg.includes('community') || seg.includes('credit union')) {
     if (features.assetTier === 'national_megabank' || features.assetTier === 'national') {
-      return { productName, score: 0, reasons: ["-50 pts: Target segment mismatch (Product is for Community, bank is Mega)."] };
+      const reason = "Hard gate: target segment mismatch; score set to 0 (product targets community banks, bank is mega-scale).";
+      return {
+        productName, score: 0, reasons: [reason], drivers: [reason],
+        ruleExplanation: {
+          baseline: "Scoring starts at 50 points.",
+          segment: "Hard target-segment mismatch; the engine immediately assigns a score of 0.",
+          profitability: "Not evaluated after the hard segment mismatch.",
+          kpis: "Not evaluated after the hard segment mismatch.",
+          finalization: "Hard-mismatch score: 0/100.",
+        },
+      };
     } else if (features.assetTier === 'community' || features.assetTier === 'micro' || features.assetTier === 'regional') {
       score += 10;
+      segmentRule = "Matching community-scale segment adds 10 points.";
       reasons.push("+10 pts: Target segment strongly aligns with bank's asset tier.");
     }
   } else if (seg.includes('large') || seg.includes('global') || seg.includes('complex')) {
     if (features.assetTier === 'micro' || features.assetTier === 'community') {
-      return { productName, score: 0, reasons: ["-50 pts: Target segment mismatch (Product requires enterprise scale)."] };
+      const reason = "Hard gate: target segment mismatch; score set to 0 (product requires enterprise scale).";
+      return {
+        productName, score: 0, reasons: [reason], drivers: [reason],
+        ruleExplanation: {
+          baseline: "Scoring starts at 50 points.",
+          segment: "Hard enterprise-scale mismatch; the engine immediately assigns a score of 0.",
+          profitability: "Not evaluated after the hard segment mismatch.",
+          kpis: "Not evaluated after the hard segment mismatch.",
+          finalization: "Hard-mismatch score: 0/100.",
+        },
+      };
     } else if (features.assetTier === 'national' || features.assetTier === 'national_megabank') {
       score += 15;
+      segmentRule = "Matching enterprise-scale segment adds 15 points.";
       reasons.push("+15 pts: Product targets enterprise scale matching bank's massive tier.");
     }
   }
 
   // Hard Gate: Unprofitable Small Banks Penalty
-  if (assetsB < 10 && (features.roe < 0 || features.roa < 0)) {
+  const smallBankLossPenaltyApplies = assetsB < 10 && (features.roe < 0 || features.roa < 0);
+  if (smallBankLossPenaltyApplies) {
     score -= 40;
     reasons.push("-40 pts: Negative profitability at community scale limits IT CapEx.");
   }
@@ -154,9 +186,23 @@ export function scoreProduct(product: any, features: BankFeatures): ProductScore
     reasons.push("0 pts: Standard solution appropriate for current operating profile.");
   }
 
+  const drivers = reasons
+    .slice(1)
+    .filter(reason => !reason.startsWith("+0 pts:") && !reason.startsWith("0 pts:"));
+
   return {
     productName,
     score: finalScore,
-    reasons: reasons.slice(0, 5) 
+    reasons: reasons.slice(0, 5),
+    drivers,
+    ruleExplanation: {
+      baseline: "Scoring starts at 50 points.",
+      segment: segmentRule,
+      profitability: smallBankLossPenaltyApplies
+        ? "Small bank under $10B with negative ROE or ROA subtracts 40 points."
+        : "The under-$10B negative-ROE/negative-ROA penalty was not triggered.",
+      kpis: "Peer-backed lower-is-better KPIs add 8 above 105% of peer; other higher-is-better KPIs add 8 below 95%; scale-driven core/modernization KPIs add 8 above 105%. Missing values add 0.",
+      finalization: `The rounded result is bounded from 0 to 100; this fit is ${finalScore}/100.`,
+    },
   };
 }

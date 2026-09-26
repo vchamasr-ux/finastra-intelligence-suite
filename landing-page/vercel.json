@@ -1,8 +1,13 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "framework": "vite",
   "rewrites": [
+    {
+      "source": "/api/fred/(.*)",
+      "destination": "https://api.stlouisfed.org/$1"
+    },
+    {
+      "source": "/api/cfpb/(.*)",
+      "destination": "https://www.consumerfinance.gov/$1"
+    },
     {
       "source": "/(.*)",
       "destination": "/index.html"

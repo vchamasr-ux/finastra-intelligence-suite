@@ -5,9 +5,10 @@ import { useFDICData } from '../hooks/useFDICData';
 import { finastraData } from '../data/FinastraData';
 import { Search, Building, Briefcase } from 'lucide-react';
 import { ProductCombobox } from './ProductCombobox';
+import { formatFdicReportPeriod, parseProductFitEvidence } from '../../../shared/productFitEvidence';
 
 export const PitchbookGenerator: React.FC = () => {
-  const { setBank, setProduct, selectedBank, selectedProduct } = usePresentationStore();
+  const { setBank, setProduct, selectedBank, selectedProduct, fitEvidence, setFitEvidence } = usePresentationStore();
   const { searchBank, searchBankByCert, loading, error } = useFDICData();
   
   const [searchQuery, setSearchQuery] = useState('');
@@ -18,17 +19,23 @@ export const PitchbookGenerator: React.FC = () => {
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const certParam = params.get('cert');
+    const productParam = params.get('product');
+    const evidence = parseProductFitEvidence(params.get('fit'));
+    if (evidence) setFitEvidence(evidence);
+    const matchingProduct = finastraData.products.find(p => p['Product/solution'] === (productParam || evidence?.productName));
+    if (matchingProduct) setProduct(matchingProduct);
     if (certParam && !selectedBank) {
       searchBankByCert(certParam).then((res) => {
         if (res) {
           setBank(res);
-          setProduct(finastraData.products[0]);
+          if (matchingProduct) setProduct(matchingProduct);
+          else setProduct(finastraData.products[0]);
         }
       }).catch(() => {
         // Deep link cert param not found — user can search manually.
       });
     }
-  }, [searchBankByCert, setBank, setProduct, selectedBank]);
+  }, [searchBankByCert, setBank, setProduct, setFitEvidence, selectedBank]);
 
   const handleSearch = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -121,6 +128,20 @@ export const PitchbookGenerator: React.FC = () => {
             }}
           />
         </div>
+
+        {fitEvidence && (
+          <aside aria-label="Carried product fit evidence" className="-mt-5 rounded-lg border border-fuchsia-500/30 bg-fuchsia-500/5 p-4">
+            <p className="text-xs font-semibold uppercase tracking-wider text-fuchsia-300">Carried fit evidence</p>
+            <p className="mt-2 text-sm font-semibold text-white">{fitEvidence.productName} · {fitEvidence.score}/100</p>
+            <p className="mt-1 text-xs text-gray-400">FDIC Call Report · {formatFdicReportPeriod(fitEvidence.sourcePeriod)}</p>
+            <p className="mt-2 text-xs leading-relaxed text-gray-300">{fitEvidence.ruleExplanation.segment} {fitEvidence.ruleExplanation.profitability}</p>
+            {fitEvidence.drivers.length > 0 && (
+              <ul className="mt-3 space-y-2">
+                {fitEvidence.drivers.map((driver, index) => <li key={`${index}-${driver}`} className="text-xs leading-relaxed text-gray-300">{driver}</li>)}
+              </ul>
+            )}
+          </aside>
+        )}
       </div>
     </div>
   );

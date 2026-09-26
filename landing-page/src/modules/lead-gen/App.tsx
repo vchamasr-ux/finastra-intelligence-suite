@@ -6,6 +6,7 @@ import { runClientEngine, clearEngineCache } from './lib/engine';
 import type { BankIntel } from './lib/engine';
 import { downloadCampaignCsv } from './lib/export';
 import { ProductCombobox } from './components/ProductCombobox';
+import { CountMetric } from './components/CountMetric';
 // @ts-ignore
 import finastraProducts from './lib/finastra_data.json';
 
@@ -101,11 +102,11 @@ function App() {
             <div className="flex gap-4 items-center">
               <div className="px-4 py-2 rounded-full bg-slate-800/50 border border-slate-700/50 flex flex-col items-center justify-center">
                 <span className="text-xs text-slate-400 uppercase tracking-widest">Total Scored</span>
-                <span className="text-lg font-bold text-white leading-none mt-1">{banks.length}</span>
+                <CountMetric label="Total Scored" value={banks.length} loading={loading} error={Boolean(fatalError)} />
               </div>
               <div className="px-4 py-2 rounded-full bg-finastra-fuchsia/10 border border-finastra-fuchsia/20 flex flex-col items-center justify-center">
                 <span className="text-xs text-finastra-fuchsia font-medium">High Propensity targets</span>
-                <span className="text-lg font-bold text-white leading-none mt-1">{banks.filter(b => (b.productScores[0]?.score || 0) > 80).length}</span>
+                <CountMetric label="High Propensity targets" value={banks.filter(b => (b.productScores[0]?.score || 0) > 80).length} loading={loading} error={Boolean(fatalError)} />
               </div>
               <button
                 onClick={handleRefresh}
@@ -190,6 +191,7 @@ function App() {
 
               <button
                 onClick={() => downloadCampaignCsv(filteredBanks, entryFilter, productFilter)}
+                disabled={loading}
                 className="flex items-center gap-2 px-5 py-2 text-sm font-semibold rounded-lg bg-white text-slate-900 border border-white/20 hover:bg-slate-200 hover:scale-105 active:scale-95 transition-all shadow-[0_0_20px_rgba(255,255,255,0.1)]"
               >
                 <Download className="w-4 h-4" /> Export CSV
@@ -210,7 +212,7 @@ function App() {
             ) : loading ? (
               <div className="flex flex-col items-center justify-center py-24">
                 <Server className="w-12 h-12 text-slate-600 animate-pulse mb-4" />
-                <p className="text-slate-500 text-lg">Querying FDIC Intelligence Nexus...</p>
+                <p role="status" aria-live="polite" className="text-slate-500 text-lg">Querying FDIC Intelligence Nexus...</p>
               </div>
             ) : (
               <BankLeaderboard banks={filteredBanks} selectedProduct={productFilter} />

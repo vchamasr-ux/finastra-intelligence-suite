@@ -1,5 +1,6 @@
 import { createContext, useContext, useState, type ReactNode } from 'react';
 import type { FinastraProduct } from '../data/FinastraData';
+import type { ProductFitEvidence } from '../../../shared/productFitEvidence';
 
 // We import the record type from our hook
 export interface FDICBankRecord {
@@ -31,8 +32,10 @@ export interface FDICBankRecord {
 export interface PresentationState {
   selectedBank: FDICBankRecord | null;
   selectedProduct: FinastraProduct | null;
+  fitEvidence: ProductFitEvidence | null;
   setBank: (b: FDICBankRecord) => void;
   setProduct: (p: FinastraProduct) => void;
+  setFitEvidence: (evidence: ProductFitEvidence | null) => void;
 }
 
 const PresentationContext = createContext<PresentationState | undefined>(undefined);
@@ -40,9 +43,10 @@ const PresentationContext = createContext<PresentationState | undefined>(undefin
 export const PresentationProvider = ({ children }: { children: ReactNode }) => {
   const [selectedBank, setBank] = useState<FDICBankRecord | null>(null);
   const [selectedProduct, setProduct] = useState<FinastraProduct | null>(null);
+  const [fitEvidence, setFitEvidence] = useState<ProductFitEvidence | null>(null);
 
   return (
-    <PresentationContext.Provider value={{ selectedBank, selectedProduct, setBank, setProduct }}>
+    <PresentationContext.Provider value={{ selectedBank, selectedProduct, fitEvidence, setBank, setProduct, setFitEvidence }}>
       {children}
     </PresentationContext.Provider>
   );

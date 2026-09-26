@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import invariant from 'tiny-invariant';
 
 // Using 2026 current FDIC BankFind Suite API endpoints
@@ -62,7 +62,7 @@ export const useFDICData = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const searchBank = async (bankName: string): Promise<FDICBankRecord[]> => {
+  const searchBank = useCallback(async (bankName: string): Promise<FDICBankRecord[]> => {
     if (!bankName.trim()) {
       throw new Error("Bank name cannot be empty");
     }
@@ -209,9 +209,9 @@ export const useFDICData = () => {
       setError(err.message);
       throw err;
     }
-  };
+  }, []);
 
-  const searchBankByCert = async (cert: string): Promise<FDICBankRecord | null> => {
+  const searchBankByCert = useCallback(async (cert: string): Promise<FDICBankRecord | null> => {
     if (!cert.trim()) return null;
     
     setLoading(true);
@@ -315,7 +315,7 @@ export const useFDICData = () => {
       setError(err.message);
       throw err;
     }
-  };
+  }, []);
 
   return { searchBank, searchBankByCert, loading, error };
 };
