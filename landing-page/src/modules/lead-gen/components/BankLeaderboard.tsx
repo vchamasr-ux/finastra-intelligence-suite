@@ -93,9 +93,17 @@ export function BankLeaderboard({ banks, selectedProduct = 'all' }: { banks: Ban
                   <div className="flex items-center gap-4">
                     <span className="text-xs font-mono text-slate-600 w-6 font-medium">{idx + 1}.</span>
                     <div className="flex flex-col">
-                      <span className="text-sm font-bold text-slate-300 group-hover:text-white group-hover:translate-x-1 transition-all">
+                      <button
+                        type="button"
+                        aria-label={`View product fit details for ${bank.name}`}
+                        onClick={(event) => {
+                          event.stopPropagation();
+                          setSelectedBank(bank);
+                        }}
+                        className="text-left text-sm font-bold text-slate-300 group-hover:text-white group-hover:translate-x-1 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-finastra-fuchsia rounded"
+                      >
                         {bank.name}
-                      </span>
+                      </button>
                       <span className="text-xs text-slate-500 mt-0.5 opacity-80">
                         FDIC Cert: {bank.fdicCert}
                       </span>
