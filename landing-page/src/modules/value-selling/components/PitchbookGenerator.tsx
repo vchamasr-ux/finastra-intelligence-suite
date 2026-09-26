@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { usePresentationStore } from '../stores/PresentationContext';
 import type { FDICBankRecord } from '../stores/PresentationContext';
 import { useFDICData } from '../hooks/useFDICData';
@@ -14,9 +14,12 @@ export const PitchbookGenerator: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState<FDICBankRecord[]>([]);
   const [hasSearched, setHasSearched] = useState(false);
+  const didHydrateDeepLink = useRef(false);
 
   // Auto-Hydration via Deep Linking
   useEffect(() => {
+    if (didHydrateDeepLink.current) return;
+    didHydrateDeepLink.current = true;
     const params = new URLSearchParams(window.location.search);
     const certParam = params.get('cert');
     const productParam = params.get('product');
@@ -96,7 +99,10 @@ export const PitchbookGenerator: React.FC = () => {
               {searchResults.map(b => (
                 <div 
                   key={b.ID} 
-                  onClick={() => setBank(b)}
+                  onClick={() => {
+                    if (selectedBank?.ID !== b.ID) setFitEvidence(null);
+                    setBank(b);
+                  }}
                   className={`p-3 rounded-md cursor-pointer border transition-colors ${selectedBank?.ID === b.ID ? 'bg-blue-900/40 border-blue-600' : 'bg-gray-800 border-gray-700 hover:border-gray-500'}`}
                 >
                   <p className="font-semibold text-sm truncate">{b.NAME}</p>
@@ -124,7 +130,10 @@ export const PitchbookGenerator: React.FC = () => {
             value={selectedProduct ? selectedProduct["Product/solution"] : ""}
             onChange={(val: string) => {
               const product = finastraData.products.find(p => p["Product/solution"] === val);
-              if (product) setProduct(product);
+              if (product) {
+                if (selectedProduct?.["Product/solution"] !== product["Product/solution"]) setFitEvidence(null);
+                setProduct(product);
+              }
             }}
           />
         </div>

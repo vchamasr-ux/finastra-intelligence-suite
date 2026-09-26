@@ -1,5 +1,5 @@
 // @vitest-environment jsdom
-import { render, screen, waitFor } from "@testing-library/react";
+import { fireEvent, render, screen, waitFor } from "@testing-library/react";
 import "@testing-library/jest-dom/vitest";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
@@ -7,6 +7,11 @@ const fdicSearch = vi.hoisted(() => ({ searchBank: vi.fn(), searchBankByCert: vi
 
 vi.mock("../hooks/useFDICData", () => ({
   useFDICData: () => ({ ...fdicSearch, loading: false, error: null }),
+}));
+vi.mock("./ProductCombobox", () => ({
+  ProductCombobox: ({ onChange }: { onChange: (value: string) => void }) => (
+    <button type="button" onClick={() => onChange("Fusion Data Cloud")}>Choose another product</button>
+  ),
 }));
 vi.mock("../lib/external", () => ({
   fetchCfpbComplaints: vi.fn().mockResolvedValue(0),
@@ -71,5 +76,26 @@ describe("lead-gen pitchbook evidence handoff", () => {
     expect(fdicSearch.searchBankByCert).toHaveBeenCalledOnce();
     expect(screen.getByRole("complementary", { name: "Carried product fit evidence" })).toHaveTextContent("Essence · 92/100");
     expect(screen.getByRole("complementary", { name: "Carried product fit evidence" })).toHaveTextContent("12/31/2025");
+  });
+
+  it("clears carried evidence when the selected institution changes", async () => {
+    const otherBank = { ...bank, ID: "bank-999", CERT: "999", NAME: "Other Bank" };
+    fdicSearch.searchBank.mockResolvedValue([otherBank]);
+    render(<PresentationProvider><PitchbookGenerator /></PresentationProvider>);
+
+    expect(screen.getByRole("complementary", { name: "Carried product fit evidence" })).toBeInTheDocument();
+    fireEvent.change(screen.getByPlaceholderText("e.g. JPMorgan"), { target: { value: "Other" } });
+    fireEvent.submit(screen.getByPlaceholderText("e.g. JPMorgan").closest("form")!);
+    await screen.findByText("Other Bank");
+    fireEvent.click(screen.getByText("Other Bank"));
+    expect(screen.queryByRole("complementary", { name: "Carried product fit evidence" })).not.toBeInTheDocument();
+  });
+
+  it("clears carried evidence when the selected product changes", async () => {
+    render(<PresentationProvider><PitchbookGenerator /></PresentationProvider>);
+    await screen.findByRole("complementary", { name: "Carried product fit evidence" });
+
+    fireEvent.click(screen.getByRole("button", { name: "Choose another product" }));
+    expect(screen.queryByRole("complementary", { name: "Carried product fit evidence" })).not.toBeInTheDocument();
   });
 });
