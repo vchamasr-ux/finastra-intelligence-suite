@@ -6,15 +6,11 @@
   "scripts": {
     "dev": "cd landing-page && npm run dev",
     "build": "cd landing-page && npm run build",
-    "test:unit": "cd landing-page && npx vitest run",
-    "test:e2e": "cd landing-page && npx playwright test",
-    "test:all": "npm run test:unit && npm run test:e2e"
+    "test:unit": "npm --prefix landing-page test",
+    "test:all": "npm run test:unit"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
-  "devDependencies": {
-    "@playwright/test": "^1.58.2"
-  }
+  "type": "commonjs"
 }

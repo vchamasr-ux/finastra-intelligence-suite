@@ -1,6 +1,6 @@
 # Finastra Intelligence Suite
 
-A production-grade, multi-application intelligence platform for Finastra, built entirely on React, Vite, Tailwind CSS, and Playwright. The suite consists of an orchestrating landing page, a deterministic lead generation engine, and an automated presentation deck generator.
+A production-grade, multi-application intelligence platform for Finastra, built on React, Vite, Tailwind CSS, and Vitest. The suite consists of an orchestrating landing page, a deterministic lead generation engine, and a presentation deck generator.
 
 ## 🏗️ Architecture
 
@@ -24,14 +24,14 @@ npm run dev
 
 ## 🧪 Testing Stack
 
-The project uses a comprehensive testing approach ensuring logic correctness, live API integrity, and E2E behavioral validation.
+The maintained automated suite uses Vitest and Testing Library for scoring/data boundaries and user-facing component behavior. The supported Laptop Browser Bridge is used separately for representative hosted-path verification.
 
 ### Scripts
 Run the following from the **Repository Root** (`c:\Users\vcham\Documents\VS Code Programs\Finastra\`):
 
-- **`npm run test:all`** - Runs all unit tests and all Playwright UI tests
-- **`npm run test:unit`** - Runs all logic/feature unit tests via Vitest in `landing-page`
-- **`npm run test:e2e`** - Runs the E2E Playwright browser automation suite in `landing-page`
+- **`npm run test:all`** - Runs the complete maintained automated suite
+- **`npm run test:unit`** - Runs all Vitest tests in `landing-page`
+- **`npm --prefix landing-page test`** - Runs the app-owned Vitest suite directly
 
 ### Test Layers
 
@@ -43,9 +43,10 @@ Run the following from the **Repository Root** (`c:\Users\vcham\Documents\VS Cod
     - Specific tests mapped directly against the FDIC API (`/institutions` and `/financials`).
     - Verifies real JPM and BofA data to ensure FDIC schema has not changed and values (like `EEFFR` and `NONII`) are correctly populated.
     - Enforces the **Fail Loudly** doctrine for broken upstream APIs.
-3. **End-to-End Visual Flow (Playwright)**
-    - Confirms that the `/lead-gen` board renders and that segmentation selects interact properly.
-    - Confirms that the `/pitchbook` search triggers 10 valid slides without console unhandled runtime errors.
+3. **User-Facing Feature Integration (Testing Library)**
+    - Confirms an accessible leaderboard action opens the selected bank details.
+    - Confirms selected product-fit score, report period, rules and drivers are presented and carried into the pitchbook URL.
+    - Confirms pitchbook hydration and that changing the selected bank or product clears stale carried evidence.
 
 ## 📐 Design Philosophy
 

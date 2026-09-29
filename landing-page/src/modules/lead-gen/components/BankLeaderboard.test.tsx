@@ -1,5 +1,6 @@
 // @vitest-environment jsdom
-import { fireEvent, render, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 import "@testing-library/jest-dom/vitest";
 import { describe, expect, it, vi } from "vitest";
 import type { BankIntel } from "../lib/engine";
@@ -39,10 +40,11 @@ const bank: BankIntel = {
 };
 
 describe("BankLeaderboard selection", () => {
-  it("opens the selected bank details from its accessible name button", () => {
+  it("opens the selected bank details from its accessible name button", async () => {
+    const user = userEvent.setup();
     render(<BankLeaderboard banks={[bank]} />);
 
-    fireEvent.click(screen.getByRole("button", { name: "View product fit details for Example Community Bank" }));
+    await user.click(screen.getByRole("button", { name: "View product fit details for Example Community Bank" }));
 
     expect(screen.getByRole("dialog", { name: "Bank details" })).toHaveTextContent("Example Community Bank");
   });
