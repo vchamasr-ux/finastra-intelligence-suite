@@ -22,7 +22,7 @@ function normalizeAssetTier(assetTier: string): string {
     case 'over_250b': return 'national_megabank';
     case '250b_100b': return 'national';
     case '100b_50b': return 'regional';
-    case '50b_10b': return 'community';
+    case '50b_10b': return 'regional';
     case '10b_1b': return 'community';
     case 'under_1b': return 'micro';
     default: return assetTier;
