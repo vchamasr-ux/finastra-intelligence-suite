@@ -39,6 +39,10 @@ describe("scoreProduct explanation", () => {
     expect(result.ruleExplanation.segment).toContain("adds 10 points");
     expect(result.ruleExplanation.profitability).toContain("was not triggered");
     expect(result.ruleExplanation.finalization).toContain("92/100");
+
+    const engineTierResult = scoreProduct(product, { ...features, assetTier: "10b_1b" });
+    expect(engineTierResult.score).toBe(result.score);
+    expect(engineTierResult.ruleExplanation.segment).toContain("adds 10 points");
   });
 
   it("explains both hard-mismatch branches as immediate zero scores", () => {
@@ -74,6 +78,8 @@ describe("scoreProduct explanation", () => {
     const enterpriseMismatch = scoreProduct(enterpriseProduct, { ...features, assetTier: "community" });
 
     expect(communityMismatch.score).toBe(0);
+    expect(scoreProduct(communityProduct, { ...features, assetTier: "over_250b" }).score).toBe(0);
+    expect(scoreProduct(communityProduct, { ...features, assetTier: "250b_100b" }).score).toBe(0);
     expect(communityMismatch.ruleExplanation.segment).toContain("immediately assigns a score of 0");
     expect(communityMismatch.ruleExplanation.finalization).toBe("Hard-mismatch score: 0/100.");
     expect(enterpriseMismatch.score).toBe(0);
