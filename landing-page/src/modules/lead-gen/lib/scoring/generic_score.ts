@@ -15,6 +15,20 @@ export interface ProductScore {
   };
 }
 
+// The engine classifies banks by FDIC asset bands; scoring uses semantic scale bands.
+// Keep both vocabularies aligned so segment gates and bonuses apply to live engine data.
+function normalizeAssetTier(assetTier: string): string {
+  switch (assetTier) {
+    case 'over_250b': return 'national_megabank';
+    case '250b_100b': return 'national';
+    case '100b_50b': return 'regional';
+    case '50b_10b': return 'regional';
+    case '10b_1b': return 'community';
+    case 'under_1b': return 'micro';
+    default: return assetTier;
+  }
+}
+
 const getPeerSegment = (assetsB: number) => {
   if (assetsB >= 250) return { roa: 1.25, roe: 14.5, eff: 58.0, nim: 3.1, nonix: 15000, nonii: 8000, yldln: 5.5, nco: 0.45, ltd: 65, cir: 45, rer: 35, ast_gr: 15, dep_gr: 12, ln_gr: 14 };
   if (assetsB >= 100) return { roa: 1.15, roe: 13.0, eff: 59.5, nim: 3.2, nonix: 4000, nonii: 1500, yldln: 5.7, nco: 0.40, ltd: 70, cir: 40, rer: 40, ast_gr: 20, dep_gr: 18, ln_gr: 19 };
@@ -32,12 +46,13 @@ export function scoreProduct(product: any, features: BankFeatures): ProductScore
   const seg = (product["Target segments"] || "").toLowerCase();
   let segmentRule = "No target-segment adjustment applied.";
 
+  const assetTier = normalizeAssetTier(features.assetTier);
   const assetsB = features.totalAssets / 1_000_000;
   const peers = getPeerSegment(assetsB);
 
   // Hard Segment adjustments
   if (seg.includes('mid-market') || seg.includes('community') || seg.includes('credit union')) {
-    if (features.assetTier === 'national_megabank' || features.assetTier === 'national') {
+    if (assetTier === 'national_megabank' || assetTier === 'national') {
       const reason = "Hard gate: target segment mismatch; score set to 0 (product targets community banks, bank is mega-scale).";
       return {
         productName, score: 0, reasons: [reason], drivers: [reason],
@@ -49,13 +64,13 @@ export function scoreProduct(product: any, features: BankFeatures): ProductScore
           finalization: "Hard-mismatch score: 0/100.",
         },
       };
-    } else if (features.assetTier === 'community' || features.assetTier === 'micro' || features.assetTier === 'regional') {
+    } else if (assetTier === 'community' || assetTier === 'micro' || assetTier === 'regional') {
       score += 10;
       segmentRule = "Matching community-scale segment adds 10 points.";
       reasons.push("+10 pts: Target segment strongly aligns with bank's asset tier.");
     }
   } else if (seg.includes('large') || seg.includes('global') || seg.includes('complex')) {
-    if (features.assetTier === 'micro' || features.assetTier === 'community') {
+    if (assetTier === 'micro' || assetTier === 'community') {
       const reason = "Hard gate: target segment mismatch; score set to 0 (product requires enterprise scale).";
       return {
         productName, score: 0, reasons: [reason], drivers: [reason],
@@ -67,7 +82,7 @@ export function scoreProduct(product: any, features: BankFeatures): ProductScore
           finalization: "Hard-mismatch score: 0/100.",
         },
       };
-    } else if (features.assetTier === 'national' || features.assetTier === 'national_megabank') {
+    } else if (assetTier === 'national' || assetTier === 'national_megabank') {
       score += 15;
       segmentRule = "Matching enterprise-scale segment adds 15 points.";
       reasons.push("+15 pts: Product targets enterprise scale matching bank's massive tier.");
